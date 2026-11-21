@@ -29,7 +29,10 @@ PARAM_NAME_RE = re.compile(r"\b[A-Z][A-Z0-9]*_[A-Z0-9_]+\b")
 NUM_RE = re.compile(r"\d+(?:\.\d+)?")
 ORDINAL_RE = re.compile(r"\d+(?:st|nd|rd|th)\b", re.IGNORECASE)
 PLACEHOLDER_RE = re.compile(r"%[sdf]|\{[a-zA-Z_][a-zA-Z0-9_]*\}")
-WORD_NUMBER_RE = re.compile(r"\b(zero|one|two|three|four|five|six|seven|eight|nine|ten)\b", re.IGNORECASE)
+WORD_NUMBER_RE = re.compile(
+    r"\b(zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|once)\b",
+    re.IGNORECASE,
+)
 WORD_NUMBERS = {
     "zero": "0",
     "one": "1",
@@ -42,7 +45,40 @@ WORD_NUMBERS = {
     "eight": "8",
     "nine": "9",
     "ten": "10",
+    "eleven": "11",
+    "twelve": "12",
+    "thirteen": "13",
+    "fourteen": "14",
+    "fifteen": "15",
+    "sixteen": "16",
+    "seventeen": "17",
+    "eighteen": "18",
+    "nineteen": "19",
+    "twenty": "20",
+    "once": "1",
 }
+ORDINAL_WORD_RE = re.compile(
+    r"\b(first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|eleventh|twelfth|thirteenth|fourteenth|fifteenth|sixteenth|seventeenth|eighteenth|nineteenth|twentieth)",
+    re.IGNORECASE,
+)
+ORDINAL_WORDS = {name: str(i) for i, name in enumerate(
+    ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth",
+     "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth",
+     "eighteenth", "nineteenth", "twentieth"], 1)}
+MULTIPLIER_WORDS = {
+    "single": "1", "onewire": "1", "primary": "1",
+    "double": "2", "twice": "2", "secondary": "2",
+    "triple": "3", "thrice": "3", "tertiary": "3",
+    "quadruple": "4", "quaternary": "4", "quintuple": "5", "sextuple": "6",
+    "quadratic": "2", "cubic": "3",
+}
+MULTIPLIER_RE = re.compile(
+    r"\b(single|onewire|primary|double|twice|secondary|triple|thrice|tertiary|quadruple|quaternary|quintuple|sextuple|quadratic|cubic)\b",
+    re.IGNORECASE,
+)
+BASE_WORDS = {"binary": "2", "octal": "8", "decimal": "10", "hex": "16", "hexadecimal": "16"}
+BASE_RE = re.compile(r"\b(binary|octal|decimal|hex|hexadecimal)\b", re.IGNORECASE)
+IMPLICIT_ONE_RE = re.compile(r"\b(per|each|every)\b", re.IGNORECASE)
 MONTH_RE = re.compile(
     r"\b(January|February|March|April|May|June|July|August|September|October|November|December)\b",
     re.IGNORECASE,
@@ -84,6 +120,11 @@ def allowed_numbers(text: str) -> list[str]:
     may become a digit (zero -> 0)."""
     nums = NUM_RE.findall(text)
     nums.extend(WORD_NUMBERS[m.group(1).lower()] for m in WORD_NUMBER_RE.finditer(text))
+    nums.extend(ORDINAL_WORDS[m.group(1).lower()] for m in ORDINAL_WORD_RE.finditer(text))
+    nums.extend(MULTIPLIER_WORDS[m.group(1).lower()] for m in MULTIPLIER_RE.finditer(text))
+    nums.extend(BASE_WORDS[m.group(1).lower()] for m in BASE_RE.finditer(text))
+    if IMPLICIT_ONE_RE.search(text):
+        nums.append("1")
     nums.extend(MONTH_NUMBERS[m.group(1).lower()] for m in MONTH_RE.finditer(text))
     return sorted(nums)
 
@@ -153,6 +194,7 @@ values from ArduPilot's parameter metadata.
 Rules, in order of importance:
 1. Keep every parameter name (ALL_CAPS_WITH_UNDERSCORES), number, unit (cm, m/s,
    degrees, %, us), and placeholder (%s, {{name}}) EXACTLY as in the source.
+   Write numbers as digits, never as words (2, not "two"/"zwei"/"اثنان").
 2. Keep acronyms like GPS, EKF, IMU, RC, PID, LED, CAN, MAVLink, SITL, VTOL
    untranslated, unless the glossary maps them.
 3. Follow the glossary strictly for consistency.

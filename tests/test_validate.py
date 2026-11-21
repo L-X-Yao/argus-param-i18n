@@ -68,6 +68,17 @@ def test_number_problems_allows_a_month_name_to_become_its_number():
     assert validate.number_problems("February 2026", "2026 年 3 月") == ["number 3 invented"]
 
 
+def test_number_problems_allows_ordinal_and_multiplier_words_to_become_digits():
+    assert validate.number_problems("Fourth button Pin", "4番目のボタンピン") == []
+    assert "7" in validate.allowed_numbers("SeventhIMU")
+    assert validate.number_problems("triple loop-rate", "3重ループレート") == []
+    assert validate.number_problems("twice as fast", "2倍速い") == []
+    assert validate.number_problems("WheelEncoder 2 counts per revolution", "1回転あたり2カウント") == []
+    assert validate.number_problems("octal 1200 (hex 0x280, decimal 640)", "8進数1200（16進数0x280、10進数640）") == []
+    assert validate.number_problems("0 is linear, 1 is cubic", "0은 선형, 1은 3차") == []
+    assert validate.number_problems("Tertiary source", "第三のソース") == []
+
+
 def test_validate_tm_accepts_a_complete_entry(monkeypatch, tmp_path):
     _use_root(monkeypatch, tmp_path)
     h = text_hash("Battery capacity")

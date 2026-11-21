@@ -39,3 +39,14 @@ def test_validator_rejects_a_number_the_source_does_not_have():
 def test_validator_allows_a_month_name_to_become_its_number():
     validator = Validator({})
     assert validator.problems("February 2026", "2026 年 2 月") == []
+
+
+def test_validator_allows_ordinal_and_multiplier_words_to_become_digits():
+    validator = Validator({})
+    assert validator.problems("Fourth button Pin", "4番目のボタンピン") == []
+    assert validator.problems("SeventhIMU", "7番目のIMU") == []
+    assert validator.problems("triple loop-rate", "3重ループレート") == []
+    assert validator.problems("twice as fast", "2倍速い") == []
+    assert validator.problems("WheelEncoder 2 counts per revolution", "1回転あたり2カウント") == []
+    assert validator.problems("octal 1200 (hex 0x280, decimal 640)", "8進数1200（16進数0x280、10進数640）") == []
+    assert validator.problems("0 is linear, 1 is cubic", "0은 선형, 1은 3차") == []
