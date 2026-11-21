@@ -1,8 +1,56 @@
 {
-  "created": "2026-11-21T14:39:19Z",
-  "data_version": "2026.11.3",
+  "created": "2026-11-21T20:15:31Z",
+  "data_version": "2026.11.4",
   "license": "GPL-3.0",
   "locales": {
+    "ar": {
+      "provider": "claude-cli",
+      "reviewed": 0,
+      "total": 8844,
+      "translated": 8844
+    },
+    "de": {
+      "provider": "claude-cli",
+      "reviewed": 0,
+      "total": 8844,
+      "translated": 8844
+    },
+    "es": {
+      "provider": "claude-cli",
+      "reviewed": 0,
+      "total": 8844,
+      "translated": 8844
+    },
+    "fr": {
+      "provider": "claude-cli",
+      "reviewed": 0,
+      "total": 8844,
+      "translated": 8844
+    },
+    "ja": {
+      "provider": "claude-cli",
+      "reviewed": 0,
+      "total": 8844,
+      "translated": 8844
+    },
+    "ko": {
+      "provider": "claude-cli",
+      "reviewed": 0,
+      "total": 8844,
+      "translated": 8844
+    },
+    "pt": {
+      "provider": "claude-cli",
+      "reviewed": 0,
+      "total": 8844,
+      "translated": 8844
+    },
+    "ru": {
+      "provider": "claude-cli",
+      "reviewed": 0,
+      "total": 8844,
+      "translated": 8844
+    },
     "zh": {
       "provider": "claude-cli",
       "reviewed": 0,
