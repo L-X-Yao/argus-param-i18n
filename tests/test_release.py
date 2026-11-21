@@ -19,6 +19,7 @@ from tools.common import file_sha256, read_json, text_hash, write_json
 def _use_root(monkeypatch, tmp_path):
     monkeypatch.setattr(release, "ROOT", tmp_path)
     monkeypatch.setattr(release, "DIST", tmp_path / "dist")
+    monkeypatch.setattr(release, "OUT", tmp_path / "out")
 
 
 def _write_pack(tmp_path):
@@ -71,6 +72,21 @@ def test_refresh_manifest_recomputes_locale_stats(monkeypatch, tmp_path):
     }
     assert manifest["locales"]["en"]["provider"] == "source"
     assert read_json(tmp_path / "manifest.json")["data_version"] == "2026.11.2"
+
+
+def test_refresh_coverage_updates_the_uploaded_locale_line(monkeypatch, tmp_path):
+    _use_root(monkeypatch, tmp_path)
+    (tmp_path / "out").mkdir()
+    (tmp_path / "out" / "coverage.md").write_text(
+        "# Coverage report\n\n- source strings: 2\n- locale zh: 1/2 translated, 0 reviewed\n",
+        encoding="utf-8",
+    )
+    release.refresh_coverage(
+        {"locales": {"zh": {"translated": 2, "total": 2, "reviewed": 1}}}
+    )
+    assert "- locale zh: 2/2 translated, 1 reviewed" in (
+        tmp_path / "out" / "coverage.md"
+    ).read_text(encoding="utf-8")
 
 
 def test_publish_refuses_a_dirty_tree(monkeypatch, tmp_path):

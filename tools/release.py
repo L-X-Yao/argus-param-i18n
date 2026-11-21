@@ -59,6 +59,39 @@ def refresh_manifest(version: str) -> dict:
     return manifest
 
 
+def refresh_coverage(manifest: dict) -> None:
+    """Keep the uploaded coverage report in step with the manifest.
+
+    The tarball does not carry coverage.md, but the release asset does. A TM
+    update that skips build_catalog would otherwise publish a report whose
+    locale line still says the previous translated count.
+    """
+    path = OUT / "coverage.md"
+    if not path.exists():
+        return
+    stats = manifest.get("locales", {})
+    lines = path.read_text(encoding="utf-8").splitlines()
+    updated: list[str] = []
+    seen: set[str] = set()
+    for line in lines:
+        if line.startswith("- locale "):
+            locale = line[len("- locale ") :].split(":", 1)[0]
+            st = stats.get(locale)
+            if st is not None:
+                updated.append(
+                    f"- locale {locale}: {st['translated']}/{st['total']} translated, {st['reviewed']} reviewed"
+                )
+                seen.add(locale)
+                continue
+        updated.append(line)
+    for locale, st in sorted(stats.items()):
+        if locale not in seen:
+            updated.append(
+                f"- locale {locale}: {st['translated']}/{st['total']} translated, {st['reviewed']} reviewed"
+            )
+    path.write_text("\n".join(updated) + "\n", encoding="utf-8")
+
+
 def build_tarball(version: str) -> Path:
     DIST.mkdir(parents=True, exist_ok=True)
     out = DIST / f"argus-param-i18n-{version}.tar.gz"
@@ -141,6 +174,7 @@ def main() -> int:
         return 0
 
     manifest = refresh_manifest(args.version)
+    refresh_coverage(manifest)
     tarball = build_tarball(args.version)
     size = tarball.stat().st_size
     print(f"{tarball.name}: {size} B, sha256 {file_sha256(tarball)}")
