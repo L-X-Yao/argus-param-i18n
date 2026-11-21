@@ -47421,15 +47421,6 @@
     "group": "SIM_",
     "human": "Gyro 5 scaling factor"
   },
-  "SIM_GYRO_FAIL_MSK": {
-    "desc": "Determines if the gyro reading updates are stopped when for an IMU simulated failure by ACCELx_FAIL params",
-    "group": "SIM_",
-    "human": "Gyro Failure Mask",
-    "values": {
-      "0": "Disabled",
-      "1": "Readings stopped"
-    }
-  },
   "SIM_IMU_COUNT": {
     "desc": "Number of simulated IMUs to create",
     "group": "SIM_",
@@ -47543,26 +47534,6 @@
     "desc": "Specifies vehicle's startup longitude",
     "group": "SIM_",
     "human": "Original Position (Longitude)"
-  },
-  "SIM_PLD_ALT_LIMIT": {
-    "desc": "Precland device maximum range altitude",
-    "group": "SIM_PLD_",
-    "human": "Precland device alt range",
-    "range": [
-      0,
-      100
-    ],
-    "units": "m"
-  },
-  "SIM_PLD_DIST_LIMIT": {
-    "desc": "Precland device maximum lateral range",
-    "group": "SIM_PLD_",
-    "human": "Precland device lateral range",
-    "range": [
-      5,
-      100
-    ],
-    "units": "m"
   },
   "SIM_PLD_ENABLE": {
     "desc": "Allows you to enable (1) or disable (0) the Preland simulation",

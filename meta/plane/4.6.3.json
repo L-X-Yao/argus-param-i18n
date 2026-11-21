@@ -50735,26 +50735,6 @@
     "group": "SIM_",
     "human": "GPIO emulation"
   },
-  "SIM_PLD_ALT_LIMIT": {
-    "desc": "Precland device maximum range altitude",
-    "group": "SIM_PLD_",
-    "human": "Precland device alt range",
-    "range": [
-      0,
-      100
-    ],
-    "units": "m"
-  },
-  "SIM_PLD_DIST_LIMIT": {
-    "desc": "Precland device maximum lateral range",
-    "group": "SIM_PLD_",
-    "human": "Precland device lateral range",
-    "range": [
-      5,
-      100
-    ],
-    "units": "m"
-  },
   "SIM_PLD_ENABLE": {
     "desc": "Allows you to enable (1) or disable (0) the Preland simulation",
     "group": "SIM_PLD_",

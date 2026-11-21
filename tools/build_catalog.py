@@ -101,10 +101,19 @@ def _canonical(entry: dict) -> dict:
     return entry
 
 
-def normalize(raw: bytes, warnings: list) -> dict:
+def normalize(raw: bytes, warnings: list) -> tuple[dict, dict]:
     """Strip vehicle prefixes. When both a prefixed and a bare form exist the bare
-    form wins (contract); any collision with differing content is reported."""
+    form wins (contract); any collision with differing content is reported.
+    Names a MAVLink PARAM_VALUE could never carry (>16 chars or characters
+    outside [A-Za-z0-9_]) are kept out of the meta file but returned separately:
+    their texts stay in source.json (GPL provenance, and upstream may reuse the
+    text under a name that does fit), while Argus's loader — which rejects a
+    meta file containing one — never sees the name."""
     parsed = parse_pdef(raw)
+    import re as _re
+
+    valid_name = _re.compile(r"^[A-Za-z0-9_]{1,16}$")
+    dropped: dict = {}
     out: dict = {}
     bare_origin: dict = {}  # bare name -> True when stored under its own bare form
     for name, entry in parsed.items():  # document order, like _parse_xml
@@ -113,6 +122,13 @@ def normalize(raw: bytes, warnings: list) -> dict:
             if name.startswith(prefix):
                 bare = name[len(prefix):]
                 break
+        if not valid_name.match(bare):
+            # Only reachable after prefix stripping — the validity check must
+            # see the bare name (ArduCopter:RTL_ALT is fine; its bare form is
+            # what the vehicle reports).
+            warnings.append(f"dropped over-long/invalid name from pdef: {name} -> {bare}")
+            dropped[bare] = entry
+            continue
         is_bare = bare == name
         if bare not in out:
             out[bare] = _canonical(dict(entry))
@@ -128,7 +144,7 @@ def normalize(raw: bytes, warnings: list) -> dict:
             bare_origin[bare] = True
         else:
             warnings.append(f"{bare}: first prefixed form kept, {name} differs")
-    return out
+    return out, dropped
 
 
 def collect_texts(meta: dict, override_meta: dict | None = None) -> list[str]:
@@ -204,14 +220,18 @@ def main() -> int:
             if not SERIES_RE.match(series):
                 raise SystemExit(f"bad series {series}")
             warnings: list[str] = []
-            meta = normalize(path.read_bytes(), warnings)
+            meta, dropped_names = normalize(path.read_bytes(), warnings)
             prefix_warnings.extend(f"{key}: {w}" for w in warnings)
             write_json(ROOT / "meta" / vehicle / f"{series}.json", meta)
             series_meta[series] = meta
 
             override_path = ROOT / "overrides" / f"{vehicle}.json"
             override_meta = json.loads(override_path.read_text(encoding="utf-8")) if override_path.exists() else {}
-            texts = collect_texts(meta, override_meta)
+            for oname in list(override_meta):
+                if len(oname) > 16:
+                    warnings.append(f"dropped over-long override name: {oname}")
+                    del override_meta[oname]
+            texts = collect_texts(meta, dropped_names) + collect_texts(meta, override_meta)
             for t in texts:
                 source[text_hash(t)] = t
             for name, entry in override_meta.items():

@@ -1,6 +1,6 @@
 {
-  "created": "2026-11-21T11:20:29Z",
-  "data_version": "2026.11.1",
+  "created": "2026-11-21T11:24:16Z",
+  "data_version": "2026.11.2",
   "license": "GPL-3.0",
   "locales": {
     "zh": {
@@ -14,14 +14,14 @@
   "schema": 1,
   "sources": [
     {
-      "params": 4426,
+      "params": 4423,
       "series": "4.5.7",
       "sha256": "61599e773eadeba781d69c124aff3acfbeea884b2a159d9ca6f7891f379513c9",
       "url": "https://autotest.ardupilot.org/Parameters/versioned/Copter/stable-4.5.7/apm.pdef.xml",
       "vehicle": "copter"
     },
     {
-      "params": 4776,
+      "params": 4774,
       "series": "4.6.3",
       "sha256": "e6375727b7a05a0c820b7b5c3e28c755d52c1e6da6b4506682d1dd3b19552190",
       "url": "https://autotest.ardupilot.org/Parameters/versioned/Copter/stable-4.6.3/apm.pdef.xml",
@@ -35,14 +35,14 @@
       "vehicle": "copter"
     },
     {
-      "params": 4485,
+      "params": 4482,
       "series": "4.5.7",
       "sha256": "4abf0156f5c68d61fe0efef5f24daefc31754ee1ddf6cd8e70b01aff300bfa83",
       "url": "https://autotest.ardupilot.org/Parameters/versioned/Plane/stable-4.5.7/apm.pdef.xml",
       "vehicle": "plane"
     },
     {
-      "params": 4851,
+      "params": 4849,
       "series": "4.6.3",
       "sha256": "154e7bd4c38a75cc09e7109a4b7cfaa7f7a6fbf03125cfe6a849032f3b8389aa",
       "url": "https://autotest.ardupilot.org/Parameters/versioned/Plane/stable-4.6.3/apm.pdef.xml",
@@ -56,14 +56,14 @@
       "vehicle": "plane"
     },
     {
-      "params": 4209,
+      "params": 4206,
       "series": "4.5.7",
       "sha256": "a3f3ffac3b26183fb167ac93ae58748df1825096f0b9ba3194b2a36e3cd02a90",
       "url": "https://autotest.ardupilot.org/Parameters/versioned/Rover/stable-4.5.7/apm.pdef.xml",
       "vehicle": "rover"
     },
     {
-      "params": 4559,
+      "params": 4557,
       "series": "4.6.3",
       "sha256": "0c009e0a35c0ab8f3455f1bb323c29f6a59152dc54cb5e0edcc95afd48127de5",
       "url": "https://autotest.ardupilot.org/Parameters/versioned/Rover/stable-4.6.3/apm.pdef.xml",
@@ -77,7 +77,7 @@
       "vehicle": "rover"
     },
     {
-      "params": 3085,
+      "params": 3082,
       "series": "4.5.3",
       "sha256": "a6a84e9d7f6ab10076888ebd9471cd728b690026855f7f7e5e5135e006c64cbb",
       "url": "https://autotest.ardupilot.org/Parameters/versioned/Sub/stable-4.5.3/apm.pdef.xml",
