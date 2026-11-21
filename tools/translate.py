@@ -29,6 +29,38 @@ PARAM_NAME_RE = re.compile(r"\b[A-Z][A-Z0-9]*_[A-Z0-9_]+\b")
 NUM_RE = re.compile(r"\d+(?:\.\d+)?")
 ORDINAL_RE = re.compile(r"\d+(?:st|nd|rd|th)\b", re.IGNORECASE)
 PLACEHOLDER_RE = re.compile(r"%[sdf]|\{[a-zA-Z_][a-zA-Z0-9_]*\}")
+WORD_NUMBER_RE = re.compile(r"\b(zero|one|two|three|four|five|six|seven|eight|nine|ten)\b", re.IGNORECASE)
+WORD_NUMBERS = {
+    "zero": "0",
+    "one": "1",
+    "two": "2",
+    "three": "3",
+    "four": "4",
+    "five": "5",
+    "six": "6",
+    "seven": "7",
+    "eight": "8",
+    "nine": "9",
+    "ten": "10",
+}
+MONTH_RE = re.compile(
+    r"\b(January|February|March|April|May|June|July|August|September|October|November|December)\b",
+    re.IGNORECASE,
+)
+MONTH_NUMBERS = {
+    "january": "1",
+    "february": "2",
+    "march": "3",
+    "april": "4",
+    "may": "5",
+    "june": "6",
+    "july": "7",
+    "august": "8",
+    "september": "9",
+    "october": "10",
+    "november": "11",
+    "december": "12",
+}
 
 # Acronyms a translation must keep as-is (unless the glossary maps them, e.g.
 # RTL -> 返航). Uppercase English words like NOTE or WARNING are not acronyms.
@@ -48,8 +80,12 @@ def mandatory_numbers(text: str) -> list[str]:
 
 def allowed_numbers(text: str) -> list[str]:
     """Digits the translation may contain: all of them, ordinals included
-    ("4th" may legitimately become 第4, keeping the 4)."""
-    return sorted(NUM_RE.findall(text))
+    ("4th" may legitimately become 第4, keeping the 4). An English number word
+    may become a digit (zero -> 0)."""
+    nums = NUM_RE.findall(text)
+    nums.extend(WORD_NUMBERS[m.group(1).lower()] for m in WORD_NUMBER_RE.finditer(text))
+    nums.extend(MONTH_NUMBERS[m.group(1).lower()] for m in MONTH_RE.finditer(text))
+    return sorted(nums)
 
 
 def load_glossary(locale: str) -> dict:

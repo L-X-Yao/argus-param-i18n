@@ -72,5 +72,14 @@
   "velocity": "速度",
   "acceleration": "加速度",
   "thrust": "推力",
-  "torque": "扭矩"
+  "torque": "扭矩",
+  "ESC": "ESC",
+  "GCS": "GCS",
+  "IMU": "IMU",
+  "EKF": "EKF",
+  "GPS": "GPS",
+  "RPM": "RPM",
+  "VTOL": "VTOL",
+  "CAN": "CAN",
+  "DroneCAN": "DroneCAN"
 }

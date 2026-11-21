@@ -56,6 +56,18 @@ def test_number_problems_reports_dropped_and_invented_numbers():
     assert validate.number_problems("Set 2", "设置 3") == ["number 2 dropped", "number 3 invented"]
 
 
+def test_number_problems_allows_english_number_words_to_become_digits():
+    assert "0" in validate.allowed_numbers("Set to zero")
+    assert validate.number_problems("Set to zero", "设为 0") == []
+    assert validate.number_problems("Set to zero", "设为 1") == ["number 1 invented"]
+
+
+def test_number_problems_allows_a_month_name_to_become_its_number():
+    assert "2" in validate.allowed_numbers("24th February 2026")
+    assert validate.number_problems("February 2026", "2026 年 2 月") == []
+    assert validate.number_problems("February 2026", "2026 年 3 月") == ["number 3 invented"]
+
+
 def test_validate_tm_accepts_a_complete_entry(monkeypatch, tmp_path):
     _use_root(monkeypatch, tmp_path)
     h = text_hash("Battery capacity")

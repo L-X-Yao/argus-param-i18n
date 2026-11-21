@@ -32,6 +32,38 @@ NUM_RE = re.compile(r"\d+(?:\.\d+)?")
 ORDINAL_RE = re.compile(r"\d+(?:st|nd|rd|th)\b", re.IGNORECASE)
 PARAM_NAME_RE = re.compile(r"\b[A-Z][A-Z0-9]*_[A-Z0-9_]+\b")
 PLACEHOLDER_RE = re.compile(r"%[sdf]|\{[a-zA-Z_][a-zA-Z0-9_]*\}")
+WORD_NUMBER_RE = re.compile(r"\b(zero|one|two|three|four|five|six|seven|eight|nine|ten)\b", re.IGNORECASE)
+WORD_NUMBERS = {
+    "zero": "0",
+    "one": "1",
+    "two": "2",
+    "three": "3",
+    "four": "4",
+    "five": "5",
+    "six": "6",
+    "seven": "7",
+    "eight": "8",
+    "nine": "9",
+    "ten": "10",
+}
+MONTH_RE = re.compile(
+    r"\b(January|February|March|April|May|June|July|August|September|October|November|December)\b",
+    re.IGNORECASE,
+)
+MONTH_NUMBERS = {
+    "january": "1",
+    "february": "2",
+    "march": "3",
+    "april": "4",
+    "may": "5",
+    "june": "6",
+    "july": "7",
+    "august": "8",
+    "september": "9",
+    "october": "10",
+    "november": "11",
+    "december": "12",
+}
 
 
 def mandatory_numbers(text: str) -> list[str]:
@@ -40,8 +72,15 @@ def mandatory_numbers(text: str) -> list[str]:
 
 
 def allowed_numbers(text: str) -> list[str]:
-    """Digits the translation may contain: all source numbers, ordinals included."""
-    return sorted(NUM_RE.findall(text))
+    """Digits the translation may contain: all source numbers, ordinals included.
+
+    An English number word may legitimately become a digit (zero -> 0), so its
+    value is allowed as well. The reverse is not required.
+    """
+    nums = NUM_RE.findall(text)
+    nums.extend(WORD_NUMBERS[m.group(1).lower()] for m in WORD_NUMBER_RE.finditer(text))
+    nums.extend(MONTH_NUMBERS[m.group(1).lower()] for m in MONTH_RE.finditer(text))
+    return sorted(nums)
 
 
 def number_problems(src: str, dst: str) -> list[str]:

@@ -1,13 +1,13 @@
 {
-  "created": "2026-11-21T11:24:16Z",
-  "data_version": "2026.11.2",
+  "created": "2026-11-21T14:39:19Z",
+  "data_version": "2026.11.3",
   "license": "GPL-3.0",
   "locales": {
     "zh": {
       "provider": "claude-cli",
       "reviewed": 0,
       "total": 8844,
-      "translated": 8768
+      "translated": 8844
     }
   },
   "min_argus": "3.15.0",
