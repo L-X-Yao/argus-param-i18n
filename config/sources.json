@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "base_url": "https://autotest.ardupilot.org/Parameters/versioned",
+  "fallback_url": "https://autotest.ardupilot.org/Parameters",
+  "vehicles": {
+    "copter": {
+      "xml_name": "Copter",
+      "series": ["4.5.7", "4.6.3", "4.7.1"]
+    },
+    "plane": {
+      "xml_name": "Plane",
+      "series": ["4.5.7", "4.6.3", "4.7.1"]
+    },
+    "rover": {
+      "xml_name": "Rover",
+      "series": ["4.5.7", "4.6.3", "4.7.1"]
+    },
+    "sub": {
+      "xml_name": "Sub",
+      "series": ["4.5.3", "4.7.1"]
+    }
+  }
+}

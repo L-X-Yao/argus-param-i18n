@@ -1,0 +1,8 @@
+cache/
+out/
+dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.venv/
