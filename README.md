@@ -53,6 +53,15 @@ The default translation provider uses the local Claude Code CLI in batch mode. A
 adapter can also import a JSON file produced by another tool, so a translator is not tied to one
 vendor.
 
+## Checks
+
+```bash
+python -m pytest          # unit tests for the tools and the pack contract
+python -m tools.validate  # schema, hashes, coverage and token checks
+```
+
+CI runs both on every push and pull request.
+
 ## License
 
 The repository is GPL-3.0. The English parameter descriptions are derived from ArduPilot, which
