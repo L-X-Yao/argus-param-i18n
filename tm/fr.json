@@ -9409,6 +9409,10 @@
     "r": 0,
     "t": "relay_4_momentary"
   },
+  "470d2c6ca0cca5c9d6ca8d17bd588782f96e0e2555ce6d0dce12377a5d44ea8c": {
+    "r": 0,
+    "t": "Lorsqu'il est activé, ceci ajoute l'entrée des manches de l'utilisateur aux gouvernes en modes auto, permettant à l'utilisateur de conserver un certain degré de contrôle du vol sans changer de mode. 3 types de mixage des manches sont disponibles. Si vous réglez STICK_MIXING sur 1 ou 4, un mixage « fly by wire » sera utilisé. 4 assure le contrôle du roulis et du lacet, tandis que 1 assure aussi un contrôle du tangage de type FBW-A. Si vous réglez STICK_MIXING sur 3, il s'appliquera au lacet uniquement en modes quadplane, par exemple lors d'un décollage ou atterrissage VTOL automatique. AVERTISSEMENT : le contrôle du tangage FBW-A n'offre pas de protections d'enveloppe de vol. Des entrées de tangage prolongées en mode 1 peuvent provoquer un décrochage ou une survitesse et doivent être évitées."
+  },
   "471a45cc48a6288f999e7e29ab9ca7f4093dee85be24e9b4cc7ddc59b5673543": {
     "r": 0,
     "t": "Enregistrer uniquement si nécessaire"
@@ -22129,6 +22133,10 @@
   "a241819b353bcbc883bf521be80e1a2cbdde6692e91e47210402be1cc252e599": {
     "r": 0,
     "t": "Permet de sélectionner la bande LTE. Une valeur de -1 signifie qu'aucun changement de bande n'est effectué. Une valeur de 0 définit toutes les bandes. Sinon, la bande spécifiée est définie."
+  },
+  "a2489ac91430f81cc00af0a8822dd8086120b66cf6f7db9bbe5829af9a44ec8e": {
+    "r": 0,
+    "t": "Tension minimale fournie par la girouette analogique. Lors de l'utilisation de la broche 103, la valeur maximale du paramètre est de 3.3V."
   },
   "a249e617cf2b5b162b248037494734d16e347867b21c508c8f2752254d069db9": {
     "r": 0,
