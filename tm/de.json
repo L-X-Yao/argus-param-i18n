@@ -11065,6 +11065,10 @@
     "r": 0,
     "t": "EnableStats"
   },
+  "52aeb5304d99806445f43d02a404aa67579dda79b617b34db45183aa786f18ee": {
+    "r": 0,
+    "t": "Größe des Fensters für FFT-Berechnungen. Wird nach Neustart wirksam. Muss eine Potenz von 2 zwischen 32 und 512 sein. Größere Fenster liefern höhere Frequenzauflösung, aber schlechtere Zeitauflösung, verbrauchen mehr CPU-Zeit und sind nicht für alle Fahrzeuge geeignet. Zeit- und Frequenzauflösung ergeben sich aus Abtastrate / Fenstergröße. Fenster von 256 werden nur für F7-Boards wirklich empfohlen, Fenster von 512 oder mehr für H7."
+  },
   "52aed74f735036fe9b5eae682632d19fccae597531133f3847abd0b04d944c02": {
     "r": 0,
     "t": "L25W34"
@@ -16837,6 +16841,10 @@
   "7c698652b9b746d1a5176736fe4a63ddf1428ef876151cf339021706e18518ba": {
     "r": 0,
     "t": "Legt einen Timeout für die serielle Durchschleifung in Sekunden fest. Wenn die Durchschleifung durch Setzen der Parameter SERIAL_PASS1 und SERIAL_PASS2 aktiviert wird, bleibt sie in Kraft, bis für SERIAL_PASSTIMO Sekunden keine Daten vom ersten Port kommen. Dadurch kann der Port zu seiner normalen Nutzung (z. B. MAVLink-Verbindung zu einer GCS) zurückkehren, wenn er nicht mehr benötigt wird. Ein Wert von 0 bedeutet kein Timeout."
+  },
+  "7c75b7d8acfe4177775596bde497f4bf885e55a587fb091de8ec67a2439cde75": {
+    "r": 0,
+    "t": "Das Segelboot wendet, wenn es diesen Cross-Track-Fehler erreicht, definiert einen Korridor von 2 Mal diesem Wert Breite, 0 deaktiviert"
   },
   "7c7a8cfb6beedf25aaa261745815ec96c9cf8ab2541d12793501e51be80ae2c7": {
     "r": 0,

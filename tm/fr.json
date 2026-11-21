@@ -5651,6 +5651,10 @@
     "r": 0,
     "t": "facteurs d'échelle appliqués à l'accéléromètre simulé (axe Z)"
   },
+  "2b9fe54997a526e7cca31ad243a1cbb24a5983460597203a63c5268db0eea144": {
+    "r": 0,
+    "t": "Ce paramètre définit le retard (en 1/10 de seconde) appliqué au contrôle de la vitesse sol après la validation du contrôle d'accélération avant commandé par TKOFF_THR_MINACC. Pour les lancers à la main avec hélices propulsives, il est essentiel de régler cette valeur à au moins 2 (0.2 seconde) pour garantir que l'aéronef est suffisamment dégagé du bras du lanceur avant que le moteur puisse démarrer. Pour les lancers à l'élastique, une valeur plus grande peut être utilisée (par exemple 30) afin de laisser le temps à l'élastique de se libérer de l'aéronef avant le démarrage du moteur."
+  },
   "2baa9682b86fdb03ba70364cca2ff528bd373ab5480c4f5c1cb21469b639c562": {
     "r": 0,
     "t": "Position d'origine (latitude)"
