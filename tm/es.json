@@ -5651,6 +5651,10 @@
     "r": 0,
     "t": "factores de escala aplicados al acelerómetro simulado (eje Z)"
   },
+  "2b9fe54997a526e7cca31ad243a1cbb24a5983460597203a63c5268db0eea144": {
+    "r": 0,
+    "t": "Este parámetro establece el retardo temporal (en 1/10 de segundo) con el que se retrasa la comprobación de la velocidad terrestre tras superarse la comprobación de aceleración hacia delante controlada por TKOFF_THR_MINACC. Para lanzamientos a mano con hélices propulsoras es esencial que se ajuste a un valor no inferior a 2 (0.2 segundos) para garantizar que la aeronave esté despejada del brazo de quien la lanza antes de que el motor pueda arrancar. Para lanzamientos con goma elástica se puede usar un valor mayor (como 30) para dar tiempo a que la goma se libere de la aeronave antes de que se arranque el motor."
+  },
   "2baa9682b86fdb03ba70364cca2ff528bd373ab5480c4f5c1cb21469b639c562": {
     "r": 0,
     "t": "Posición original (latitud)"
