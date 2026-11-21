@@ -1,0 +1,365 @@
+{
+  "SIM_ACC_TRIM_X": {
+    "desc": "Simulated accelerometer trim on the X axis",
+    "human": "Simulated accelerometer trim X",
+    "source": "generated"
+  },
+  "SIM_ACC_TRIM_Y": {
+    "desc": "Simulated accelerometer trim on the Y axis",
+    "human": "Simulated accelerometer trim Y",
+    "source": "generated"
+  },
+  "SIM_ACC_TRIM_Z": {
+    "desc": "Simulated accelerometer trim on the Z axis",
+    "human": "Simulated accelerometer trim Z",
+    "source": "generated"
+  },
+  "SIM_ARSPD2_OFS": {
+    "desc": "Simulated Airspeed sensor offset",
+    "human": "Airspeed sensor offset",
+    "units": "m/s"
+  },
+  "SIM_ARSPD2_RND": {
+    "desc": "Simulated Airspeed sensor noise",
+    "human": "Airspeed sensor noise",
+    "units": "Pa"
+  },
+  "SIM_ARSPD_OFS": {
+    "desc": "Simulated Airspeed sensor offset",
+    "human": "Airspeed sensor offset",
+    "units": "m/s"
+  },
+  "SIM_ARSPD_RND": {
+    "desc": "Simulated Airspeed sensor noise",
+    "human": "Airspeed sensor noise",
+    "units": "Pa"
+  },
+  "SIM_FTOWESC_ENA": {
+    "desc": "Allows you to enable (1) or disable (0) the FETtecOneWireESC simulator",
+    "human": "FETtec OneWire ESC simulator enable/disable",
+    "values": {
+      "0": "Disabled",
+      "1": "Enabled"
+    }
+  },
+  "SIM_FTOWESC_POW": {
+    "desc": "Allows you to turn power off to the simulated ESCs.  Bits correspond to the ESC ID, *NOT* their servo channel.",
+    "human": "Power off FETtec ESC mask"
+  },
+  "SIM_IE24_ENABLE": {
+    "desc": "Allows you to enable (1) or disable (0) the FuelCell simulator",
+    "human": "IntelligentEnergy 2.4kWh FuelCell sim enable/disable",
+    "values": {
+      "0": "Disabled",
+      "1": "V1 Protocol",
+      "2": "V2 Protocol"
+    }
+  },
+  "SIM_IE24_ERROR": {
+    "desc": "Explicitly specify an error code to send to the generator",
+    "human": "Explicitly set error code"
+  },
+  "SIM_IE24_STATE": {
+    "desc": "Explicitly specify a state for the generator to be in",
+    "human": "Explicitly set state"
+  },
+  "SIM_IMUT1_ENABLE": {
+    "desc": "Enable the injection of temperature disturbance to the accelerometer and gyroscope data to simulate temperature calibration",
+    "human": "Enable simulated temperature disturbance for sensor data",
+    "values": {
+      "0": "Disable",
+      "1": "Enabled",
+      "2": "Learn Calibration"
+    }
+  },
+  "SIM_IMUT2_ENABLE": {
+    "desc": "Enable the injection of temperature disturbance to the accelerometer and gyroscope data to simulate temperature calibration",
+    "human": "Enable simulated temperature disturbance for sensor data",
+    "values": {
+      "0": "Disable",
+      "1": "Enabled",
+      "2": "Learn Calibration"
+    }
+  },
+  "SIM_IMUT3_ENABLE": {
+    "desc": "Enable the injection of temperature disturbance to the accelerometer and gyroscope data to simulate temperature calibration",
+    "human": "Enable simulated temperature disturbance for sensor data",
+    "values": {
+      "0": "Disable",
+      "1": "Enabled",
+      "2": "Learn Calibration"
+    }
+  },
+  "SIM_MAG1_DIA_X": {
+    "desc": "DIA_X in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron diagonal X component"
+  },
+  "SIM_MAG1_DIA_Y": {
+    "desc": "DIA_Y in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron diagonal Y component"
+  },
+  "SIM_MAG1_DIA_Z": {
+    "desc": "DIA_Z in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron diagonal Z component"
+  },
+  "SIM_MAG1_ODI_X": {
+    "desc": "ODI_X in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron off-diagonal X component"
+  },
+  "SIM_MAG1_ODI_Y": {
+    "desc": "ODI_Y in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron off-diagonal Y component"
+  },
+  "SIM_MAG1_ODI_Z": {
+    "desc": "ODI_Z in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron off-diagonal Z component"
+  },
+  "SIM_MAG1_OFS_X": {
+    "desc": "Magnetometer offset injected into the simulation (X-axis)",
+    "human": "Magnetometer offset applied to SITL"
+  },
+  "SIM_MAG1_OFS_Y": {
+    "desc": "Magnetometer offset injected into the simulation (Y-axis)",
+    "human": "Magnetometer offset applied to SITL"
+  },
+  "SIM_MAG1_OFS_Z": {
+    "desc": "Magnetometer offset injected into the simulation (Z-axis)",
+    "human": "Magnetometer offset applied to SITL"
+  },
+  "SIM_MAG2_DIA_X": {
+    "desc": "DIA_X in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron diagonal X component"
+  },
+  "SIM_MAG2_DIA_Y": {
+    "desc": "DIA_Y in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron diagonal Y component"
+  },
+  "SIM_MAG2_DIA_Z": {
+    "desc": "DIA_Z in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron diagonal Z component"
+  },
+  "SIM_MAG2_ODI_X": {
+    "desc": "ODI_X in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron off-diagonal X component"
+  },
+  "SIM_MAG2_ODI_Y": {
+    "desc": "ODI_Y in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron off-diagonal Y component"
+  },
+  "SIM_MAG2_ODI_Z": {
+    "desc": "ODI_Z in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron off-diagonal Z component"
+  },
+  "SIM_MAG2_OFS_X": {
+    "desc": "Magnetometer offset injected into the simulation (X-axis)",
+    "human": "Magnetometer offset applied to SITL"
+  },
+  "SIM_MAG2_OFS_Y": {
+    "desc": "Magnetometer offset injected into the simulation (Y-axis)",
+    "human": "Magnetometer offset applied to SITL"
+  },
+  "SIM_MAG2_OFS_Z": {
+    "desc": "Magnetometer offset injected into the simulation (Z-axis)",
+    "human": "Magnetometer offset applied to SITL"
+  },
+  "SIM_MAG3_DIA_X": {
+    "desc": "DIA_X in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron diagonal X component"
+  },
+  "SIM_MAG3_DIA_Y": {
+    "desc": "DIA_Y in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron diagonal Y component"
+  },
+  "SIM_MAG3_DIA_Z": {
+    "desc": "DIA_Z in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron diagonal Z component"
+  },
+  "SIM_MAG3_ODI_X": {
+    "desc": "ODI_X in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron off-diagonal X component"
+  },
+  "SIM_MAG3_ODI_Y": {
+    "desc": "ODI_Y in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron off-diagonal Y component"
+  },
+  "SIM_MAG3_ODI_Z": {
+    "desc": "ODI_Z in the magnetometer soft-iron calibration matrix: [[DIA_X, ODI_X, ODI_Y], [ODI_X, DIA_Y, ODI_Z], [ODI_Y, ODI_Z, DIA_Z]]",
+    "human": "Magnetometer soft-iron off-diagonal Z component"
+  },
+  "SIM_MAG3_OFS_X": {
+    "desc": "Magnetometer offset injected into the simulation (X-axis)",
+    "human": "Magnetometer offset applied to SITL"
+  },
+  "SIM_MAG3_OFS_Y": {
+    "desc": "Magnetometer offset injected into the simulation (Y-axis)",
+    "human": "Magnetometer offset applied to SITL"
+  },
+  "SIM_MAG3_OFS_Z": {
+    "desc": "Magnetometer offset injected into the simulation (Z-axis)",
+    "human": "Magnetometer offset applied to SITL"
+  },
+  "SIM_MAG_ALY_X": {
+    "desc": "Simulates localized magnetic field distortions at ground level that decays with altitude. (X-axis)",
+    "human": "NED anomaly vector at ground level",
+    "units": "mGauss"
+  },
+  "SIM_MAG_ALY_Y": {
+    "desc": "Simulates localized magnetic field distortions at ground level that decays with altitude. (Y-axis)",
+    "human": "NED anomaly vector at ground level",
+    "units": "mGauss"
+  },
+  "SIM_MAG_ALY_Z": {
+    "desc": "Simulates localized magnetic field distortions at ground level that decays with altitude. (Z-axis)",
+    "human": "NED anomaly vector at ground level",
+    "units": "mGauss"
+  },
+  "SIM_MAG_MOT_X": {
+    "desc": "Simulates distortion of magnetometer readings caused by motor current (X-axis)",
+    "human": "Motor magnetic interference",
+    "units": "mGauss/A"
+  },
+  "SIM_MAG_MOT_Y": {
+    "desc": "Simulates distortion of magnetometer readings caused by motor current (Y-axis)",
+    "human": "Motor magnetic interference",
+    "units": "mGauss/A"
+  },
+  "SIM_MAG_MOT_Z": {
+    "desc": "Simulates distortion of magnetometer readings caused by motor current (Z-axis)",
+    "human": "Motor magnetic interference",
+    "units": "mGauss/A"
+  },
+  "SIM_PARA_ENABLE": {
+    "desc": "Allows you to enable (1) or disable (0) the Parachute simulation",
+    "human": "Parachute Sim enable/disable",
+    "values": {
+      "0": "Disabled",
+      "1": "Enabled"
+    }
+  },
+  "SIM_PARA_PIN": {
+    "desc": "The pin number that the Parachute pyrotechnics are connected to. (start at 1)",
+    "human": "Parachute pin",
+    "range": [
+      0,
+      15
+    ]
+  },
+  "SIM_PLD_ALT_LMT": {
+    "desc": "Precland device maximum range altitude",
+    "human": "Precland device alt range",
+    "range": [
+      0,
+      100
+    ],
+    "units": "m"
+  },
+  "SIM_PLD_DIST_LMT": {
+    "desc": "Precland device maximum lateral range",
+    "human": "Precland device lateral range",
+    "range": [
+      5,
+      100
+    ],
+    "units": "m"
+  },
+  "SIM_RICH_CTRL": {
+    "desc": "The pin number that the RichenPower spinner servo is connected to. (start at 1)",
+    "human": "Pin RichenPower is connectred to",
+    "range": [
+      0,
+      15
+    ]
+  },
+  "SIM_RICH_ENABLE": {
+    "desc": "Allows you to enable (1) or disable (0) the RichenPower simulator",
+    "human": "RichenPower Generator sim enable/disable",
+    "values": {
+      "0": "Disabled",
+      "1": "Enabled"
+    }
+  },
+  "SIM_SHIP_DSIZE": {
+    "desc": "Size of the ship's deck",
+    "human": "Deck Size",
+    "units": "m"
+  },
+  "SIM_SHIP_ENABLE": {
+    "desc": "Enable ship landing simulation",
+    "human": "Ship landing Enable",
+    "values": {
+      "0": "Disable",
+      "1": "Enabled"
+    }
+  },
+  "SIM_SHIP_OFS_X": {
+    "desc": "Defines the offset of the ship's landing pad w.r.t. the ship's origin, i.e. where the beacon is placed on the ship (X-axis)",
+    "human": "Ship landing pad offset",
+    "units": "m"
+  },
+  "SIM_SHIP_OFS_Y": {
+    "desc": "Defines the offset of the ship's landing pad w.r.t. the ship's origin, i.e. where the beacon is placed on the ship (Y-axis)",
+    "human": "Ship landing pad offset",
+    "units": "m"
+  },
+  "SIM_SHIP_OFS_Z": {
+    "desc": "Defines the offset of the ship's landing pad w.r.t. the ship's origin, i.e. where the beacon is placed on the ship (Z-axis)",
+    "human": "Ship landing pad offset",
+    "units": "m"
+  },
+  "SIM_SHIP_PSIZE": {
+    "desc": "Diameter of the circle the ship is traveling on",
+    "human": "Path Size",
+    "units": "m"
+  },
+  "SIM_SHIP_SPEED": {
+    "desc": "Speed of the ship",
+    "human": "Ship Speed",
+    "units": "m/s"
+  },
+  "SIM_SHIP_SYSID": {
+    "desc": "System ID of the ship",
+    "human": "System ID",
+    "range": [
+      1,
+      4294967295
+    ]
+  },
+  "SIM_SONAR_POS_X": {
+    "desc": "XYZ position of the sonar relative to the body frame origin (X-axis)",
+    "human": "Sonar Offsets",
+    "units": "m"
+  },
+  "SIM_SONAR_POS_Y": {
+    "desc": "XYZ position of the sonar relative to the body frame origin (Y-axis)",
+    "human": "Sonar Offsets",
+    "units": "m"
+  },
+  "SIM_SONAR_POS_Z": {
+    "desc": "XYZ position of the sonar relative to the body frame origin (Z-axis)",
+    "human": "Sonar Offsets",
+    "units": "m"
+  },
+  "SIM_TA_ENABLE": {
+    "desc": "Allows you to enable (1) or disable (0) the simulated tonealarm",
+    "human": "ToneAlarm enable/disable",
+    "values": {
+      "0": "Disabled",
+      "1": "Enabled"
+    }
+  },
+  "SIM_VIB_FREQ_X": {
+    "desc": "Frequency of vibration applied to IMU readings in SITL (X-axis)",
+    "human": "Vibration frequency",
+    "units": "Hz"
+  },
+  "SIM_VIB_FREQ_Y": {
+    "desc": "Frequency of vibration applied to IMU readings in SITL (Y-axis)",
+    "human": "Vibration frequency",
+    "units": "Hz"
+  },
+  "SIM_VIB_FREQ_Z": {
+    "desc": "Frequency of vibration applied to IMU readings in SITL (Z-axis)",
+    "human": "Vibration frequency",
+    "units": "Hz"
+  }
+}
