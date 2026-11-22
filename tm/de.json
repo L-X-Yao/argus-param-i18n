@@ -5505,7 +5505,7 @@
   },
   "2ac134bf3d54459b1fd8c23a793b852a10fbc2fc57b138f3f8fd3790cf66ac65": {
     "r": 0,
-    "t": "Dieser Parameter wird verwendet, um den durch die Rotoren erzeugten Widerstand beim Flug eines Multikopters vorherzusagen, wodurch eine Schätzung der Winddrift ermöglicht wird. Der durch diesen Effekt erzeugte Widerstand skaliert mit der Geschwindigkeit, nicht mit dem Quadrat der Geschwindigkeit, und entsteht, weil ein Teil der Luftgeschwindigkeit normal zur Rotationsachse der Rotoren beim Durchtritt durch die Rotorscheibe verloren geht, was den Impuls der Luftströmung verändert und Widerstand verursacht. Bei unummantelten Rotoren ist der Effekt ungefähr proportional zur Fläche der Propellerblätter in Seitenansicht und ändert sich mit unterschiedlichen Propellern. Bei ummantelten Rotoren ist er höher. Wenn beispielsweise ein Flug mit 15 m/s unter Bedingungen auf Meereshöhe eine rotorinduzierte Widerstandsbeschleunigung von 1.5 m/s/s erzeugt, dann würde EK3_DRAG_MCOEF auf 0.1 = (1.5/15.0) gesetzt. Setzen Sie EK3_MCOEF auf einen positiven Wert, um die Windschätzung unter Verwendung dieses Widerstandseffekts zu aktivieren. Um den durch den Rumpf erzeugten Widerstand zu berücksichtigen, der mit dem Quadrat der Geschwindigkeit skaliert, siehe die Dokumentation für die Parameter EK3_DRAG_BCOEF_X und EK3_DRAG_BCOEF_Y."
+    "t": "Dieser Parameter wird verwendet, um den durch die Rotoren erzeugten Widerstand beim Flug eines Multikopters vorherzusagen, wodurch eine Schätzung der Winddrift ermöglicht wird. Der durch diesen Effekt erzeugte Widerstand skaliert mit der Geschwindigkeit, nicht mit dem Quadrat der Geschwindigkeit, und entsteht, weil ein Teil der Luftgeschwindigkeit normal zur Rotationsachse der Rotoren beim Durchtritt durch die Rotorscheibe verloren geht, was den Impuls der Luftströmung verändert und Widerstand verursacht. Bei nicht ummantelten Rotoren ist der Effekt ungefähr proportional zur Fläche der Propellerblätter in Seitenansicht und ändert sich mit unterschiedlichen Propellern. Bei ummantelten Rotoren ist er höher. Wenn beispielsweise ein Flug mit 15 m/s unter Bedingungen auf Meereshöhe eine rotorinduzierte Widerstandsbeschleunigung von 1.5 m/s/s erzeugt, dann würde EK3_DRAG_MCOEF auf 0.1 = (1.5/15.0) gesetzt. Setzen Sie EK3_MCOEF auf einen positiven Wert, um die Windschätzung unter Verwendung dieses Widerstandseffekts zu aktivieren. Um den durch den Rumpf erzeugten Widerstand zu berücksichtigen, der mit dem Quadrat der Geschwindigkeit skaliert, siehe die Dokumentation für die Parameter EK3_DRAG_BCOEF_X und EK3_DRAG_BCOEF_Y."
   },
   "2ac526d48232e23ff95b4ce44e8f5073734d593ac26a684f025387961cbef769": {
     "r": 0,
@@ -11411,7 +11411,7 @@
   },
   "54d3c45823b512aac13e3f76f1b1f171eda612ba9177befaf0fbf9270223e697": {
     "r": 0,
-    "t": "Scharfschalten/Notmotorstopp"
+    "t": "Scharfschalten/Motor-Notstopp"
   },
   "54de5cec832b0ff811d9775dafa342b38b8981537b283a1d7befab8114ea853a": {
     "r": 0,
@@ -22200,7 +22200,7 @@
   },
   "a28c1421c7e6a4250072feadfc344b1fab2b7c174a12b2c9cfe9f9bd2b025c0f": {
     "r": 0,
-    "t": "Legt fest, wie stark der GPS zur Korrektur der Lage verwendet wird. Für ein Flugzeug sollte dieser Wert niemals auf null gesetzt werden, da das Flugzeug sonst in Kurven die Kontrolle verliert. Für ein Flugzeug bitte den Standardwert 1.0 verwenden."
+    "t": "Legt fest, wie stark das GPS zur Korrektur der Lage verwendet wird. Für ein Flugzeug sollte dieser Wert niemals auf null gesetzt werden, da das Flugzeug sonst in Kurven die Kontrolle verliert. Für ein Flugzeug bitte den Standardwert 1.0 verwenden."
   },
   "a29008fe0b8695d68bbf474d198a65140b401f9fab9fdcfd8f834ed91effb5e5": {
     "r": 0,
@@ -23564,7 +23564,7 @@
   },
   "ac6d2d4622fe47bafbcf986ced713bbb1f758c20b8aa418a392e7c7383758775": {
     "r": 0,
-    "t": "Immer aktiviert Landen"
+    "t": "Immer aktiviert: Landen"
   },
   "ac6f481967ac4703290dc7c9fc2ea738d35fdf1276cb8652d44b9413ace13117": {
     "r": 0,

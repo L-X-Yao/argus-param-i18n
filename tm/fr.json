@@ -505,7 +505,7 @@
   },
   "03da4880c4c425207422f6e9ba530b93a68cfa34096881907df13c094819c851": {
     "r": 0,
-    "t": "Moteur5"
+    "t": "Motor5"
   },
   "03dcfc70b06252cd4a64ecd070153d1c3b20a39ca0b20bd5c78b3249ef77e8ba": {
     "r": 0,
@@ -2685,7 +2685,7 @@
   },
   "1554e5739acb8fd5b6bca9cc9533cefa25696ea5d23176ee0323294c9998ceef": {
     "r": 0,
-    "t": "Moteur26"
+    "t": "Motor26"
   },
   "155736f54828102347b6c4347ca3ba1b287a2bbc0a6b5a7b10d865057d1b0bc1": {
     "r": 0,
@@ -6234,7 +6234,7 @@
   },
   "30019b1838695d3178ec580e7487f5dfd241a1af2088d608c667dbd69cb82e54": {
     "r": 0,
-    "t": "Ceci détermine quand le filtre utilisera le modèle de fusion magnétomètre 3 axes qui estime à la fois les états du champ magnétique terrestre et lié au corps, et quand il utilisera un modèle de fusion de cap magnétique plus simple qui n'utilise pas d'états de champ magnétique. La fusion magnétomètre 3 axes ne convient que lorsque l'environnement magnétique externe est stable. EK3_MAG_CAL = 0 utilise la fusion de cap au sol, la fusion 3 axes en vol, et est le réglage par défaut pour les utilisateurs de Plane. EK3_MAG_CAL = 1 utilise la fusion 3 axes uniquement lors des manœuvres. EK3_MAG_CAL = 2 utilise la fusion de cap en permanence, est recommandé si le champ magnétique externe varie et est la valeur par défaut pour les rovers. EK3_MAG_CAL = 3 utilise la fusion de cap au sol et la fusion 3 axes après le premier champ en vol et la réinitialisation du lacet terminés, et est la valeur par défaut pour les copters. EK3_MAG_CAL = 4 utilise la fusion 3 axes en permanence. EK3_MAG_CAL = 5 utilise un capteur de lacet externe avec une fusion de cap simple. NOTE : L'utilisation d'une fusion magnétomètre à cap simple rend les erreurs de calibrage et d'alignement de la boussole du véhicule plus difficiles à détecter pour l'EKF, ce qui réduit la sensibilité de l'algorithme de sécurité EKF du Copter. NOTE : Le mode de fusion peut être forcé à 2 pour des cœurs EKF spécifiques à l'aide du paramètre EK3_MAG_MASK. EK3_MAG_CAL = 6 utilise un capteur de lacet externe avec repli sur la boussole lorsque le capteur externe n'est pas disponible en vol. NOTE : Le mode de fusion peut être forcé à 2 pour des cœurs EKF spécifiques à l'aide du paramètre EK3_MAG_MASK. NOTE : un fonctionnement limité sans magnétomètre ni autre capteur de lacet est possible en réglant tous les paramètres COMPASS_USE, COMPASS_USE2, COMPASS_USE3, etc. à 0 et en réglant COMPASS_ENABLE à 0. Si cela est fait, les masques EK3_GSF_RUN et EK3_GSF_USE doivent être réglés de la même manière que EK3_IMU_MASK. Un angle de lacet dérivé des données de vitesse de l'IMU et du GPS à l'aide d'un filtre à somme gaussienne (GSF) sera alors utilisé pour aligner le lacet au début du vol et lorsqu'il y a un mouvement suffisant."
+    "t": "Ceci détermine quand le filtre utilisera le modèle de fusion magnétomètre 3 axes qui estime à la fois les états du champ magnétique terrestre et lié au corps, et quand il utilisera un modèle de fusion de cap magnétique plus simple qui n'utilise pas d'états de champ magnétique. La fusion magnétomètre 3 axes ne convient que lorsque l'environnement magnétique externe est stable. EK3_MAG_CAL = 0 utilise la fusion de cap au sol, la fusion 3 axes en vol, et est le réglage par défaut pour les utilisateurs d'avion. EK3_MAG_CAL = 1 utilise la fusion 3 axes uniquement lors des manœuvres. EK3_MAG_CAL = 2 utilise la fusion de cap en permanence, est recommandé si le champ magnétique externe varie et est la valeur par défaut pour les rovers. EK3_MAG_CAL = 3 utilise la fusion de cap au sol et la fusion 3 axes après la fin de la première réinitialisation en vol du champ et du lacet, et est la valeur par défaut pour les multicoptères. EK3_MAG_CAL = 4 utilise la fusion 3 axes en permanence. EK3_MAG_CAL = 5 utilise un capteur de lacet externe avec une fusion de cap simple. NOTE : L'utilisation d'une fusion magnétomètre à cap simple rend les erreurs de calibrage et d'alignement de la boussole du véhicule plus difficiles à détecter pour l'EKF, ce qui réduit la sensibilité de l'algorithme de sécurité EKF du Copter. NOTE : Le mode de fusion peut être forcé à 2 pour des cœurs EKF spécifiques à l'aide du paramètre EK3_MAG_MASK. EK3_MAG_CAL = 6 utilise un capteur de lacet externe avec repli sur la boussole lorsque le capteur externe n'est pas disponible en vol. NOTE : Le mode de fusion peut être forcé à 2 pour des cœurs EKF spécifiques à l'aide du paramètre EK3_MAG_MASK. NOTE : un fonctionnement limité sans magnétomètre ni autre capteur de lacet est possible en réglant tous les paramètres COMPASS_USE, COMPASS_USE2, COMPASS_USE3, etc. à 0 et en réglant COMPASS_ENABLE à 0. Si cela est fait, les masques EK3_GSF_RUN et EK3_GSF_USE doivent être réglés de la même manière que EK3_IMU_MASK. Un angle de lacet dérivé des données de vitesse de l'IMU et du GPS à l'aide d'un filtre à somme gaussienne (GSF) sera alors utilisé pour aligner le lacet au début du vol et lorsqu'il y a un mouvement suffisant."
   },
   "300223ae3ff7f1badefae104be45955186838ab80e468463fc89bf2b84f94088": {
     "r": 0,
@@ -7266,7 +7266,7 @@
   },
   "37fcbcfda949fef467190f4fb2b2cb604eb6c84f6c97e087b70b57b2bb6d43fe": {
     "r": 0,
-    "t": "Moteur3"
+    "t": "Motor3"
   },
   "380686f3e773ced04ecb1bc64179583297d3616cf876a471b0c8b509cddbef3b": {
     "r": 0,
@@ -9247,7 +9247,7 @@
   },
   "45c6fdb856e8b3d9767dd13eaf7bddc013c6f0c57da81a34b3f6248dca467668": {
     "r": 0,
-    "t": "Moteur7"
+    "t": "Motor7"
   },
   "45d2b6573ca48faa826345f4becd11d7540c7fb7735dcd17e2a0667581669417": {
     "r": 0,
@@ -11611,7 +11611,7 @@
   },
   "565b5ba2b36c0c0e3c54f8658301be34aff8083b7debbdef79d88432e87ae7b8": {
     "r": 0,
-    "t": "Moteur21"
+    "t": "Motor21"
   },
   "565e5347cddfda462a61bb01f9ce8201b31d97367428631e088790b812561cb6": {
     "r": 0,
@@ -12015,7 +12015,7 @@
   },
   "597ca46e2280e909dec05cc4d695ea22272ba5121ea459b8bcda7d5582121342": {
     "r": 0,
-    "t": "Compense la différence d'angle de tangage entre la carte de contrôle et le châssis. Les valeurs positives font cabrer l'appareil."
+    "t": "Compense la différence d'angle de tangage entre la carte de contrôle et le châssis. Les valeurs positives font cabrer / reculer le véhicule."
   },
   "59814d1c53e1f79c41210c86e4a29a1d2cf5dc277b463f4d154af03629a3f033": {
     "r": 0,
@@ -13007,7 +13007,7 @@
   },
   "60b5a5db2850a528823ff4b37e9dd809980818db8a467d452f10c46296f10c93": {
     "r": 0,
-    "t": "Moteur9"
+    "t": "Motor9"
   },
   "60d0f89b527d16fa4c202bdcd022fc086bf2ddb42582c0fe0889ed6f0db611ad": {
     "r": 0,
@@ -15936,7 +15936,7 @@
   },
   "760d424b276ed0e682510baab2348e733b62633ed84da2514123cb2f84ae082c": {
     "r": 0,
-    "t": "Moteur 6"
+    "t": "Motor6"
   },
   "7618bad3f917099176b4e339e57eeed24803d0a532a098610b6b8cae891d0f0e": {
     "r": 0,
@@ -16300,7 +16300,7 @@
   },
   "788eb6dd179891afec66bc2caa40f7a9cd75d47ee0d79146f9093228e847092c": {
     "r": 0,
-    "t": "Moteur 13"
+    "t": "Motor13"
   },
   "78a508f1491bcc2ccd930fc49c14faf5afd9f8cb960940534c81fcc5198e09aa": {
     "r": 0,
@@ -18896,7 +18896,7 @@
   },
   "8b5a18898724e8cc2f50e70dbee43ee032d1f4510e008db708ae60183b2bd155": {
     "r": 0,
-    "t": "Moteur25"
+    "t": "Motor25"
   },
   "8b605c9e85c11fbad9680a71e91b529a08d198271577e83224ca42358a10ab97": {
     "r": 0,
@@ -18916,7 +18916,7 @@
   },
   "8b7b226340314e3a171159a893634b4d3940abf1b64f8b9cc73559d3e0686ec5": {
     "r": 0,
-    "t": "Moteur14"
+    "t": "Motor14"
   },
   "8b7d341905b532b20fe424f50dcb2ca4c7b5a488bc6b2defa4af686c2f601bb7": {
     "r": 0,
@@ -20968,7 +20968,7 @@
   },
   "9a40da8f36f9d999262ca968c19c8e94cc1a405ba9a7103ac308e37f12446c82": {
     "r": 0,
-    "t": "Moteur15"
+    "t": "Motor15"
   },
   "9a423d889699778516db586cd629e86b4a8b21eedd9f756d1e5e005a99d807e4": {
     "r": 0,
@@ -21092,7 +21092,7 @@
   },
   "9b11ada103562171c4b027302024befb32962b36b6abe2b03f88267266882909": {
     "r": 0,
-    "t": "Moteur10"
+    "t": "Motor10"
   },
   "9b138ddee86d489a4cfbf4986145c51d188e708c6c0ce29b6bc076d109f52157": {
     "r": 0,
@@ -21888,7 +21888,7 @@
   },
   "a0344b63c0d25fedd623aaf0f559602453b6eabe9d334158e10d3dd337ce66e3": {
     "r": 0,
-    "t": "Moteur 12"
+    "t": "Motor12"
   },
   "a034a56468241c63784ec99f90897c6f068c5cbad9c331385050527451c1c634": {
     "r": 0,
@@ -23120,7 +23120,7 @@
   },
   "a911d0b327c2252cfe6494f5c8d70ce03e08e4503e41aaa23f05b41942846573": {
     "r": 0,
-    "t": "Moteur24"
+    "t": "Motor24"
   },
   "a911f7ebc2c6a2584a38e09d11c819012982c8db300c40a5798d3c1f977784c6": {
     "r": 0,
@@ -26460,7 +26460,7 @@
   },
   "c0ddb2165953beb7c77466ca57ae02dfb18cfbd661d7ce7de776142259718425": {
     "r": 0,
-    "t": "Moteur28"
+    "t": "Motor28"
   },
   "c0ed686d4ab18002b465797f41a6bbe3bdfb241fbd3b48a76082002ef729e71a": {
     "r": 0,
@@ -27649,7 +27649,7 @@
   },
   "c905cba7e8a1d7be2f2bc4ad2b0d44b7b80a36e2a96efe0acc00af2452fd23d5": {
     "r": 0,
-    "t": "Moteur17"
+    "t": "Motor17"
   },
   "c9107903aacd3423a767cb8de1e846aac02b82eaa95441bcc21c6292878cda5a": {
     "r": 0,
@@ -29949,7 +29949,7 @@
   },
   "d9fc9e6c3ce7e8094891599d35fc955b42ee4b85ba06c3c3a84126ef48ebff3e": {
     "r": 0,
-    "t": "Moteur 8"
+    "t": "Motor8"
   },
   "d9fcc71ffe6d78f6646bcb029929f789739dc3dd28fb2c58d17a6172c3aa2d8a": {
     "r": 0,
@@ -30013,7 +30013,7 @@
   },
   "da3e89b8bc8e4ed1daae06f84a03986e0b0aae7aa3a8b70a7ed4db088df0e952": {
     "r": 0,
-    "t": "Moteur 11"
+    "t": "Motor11"
   },
   "da3f2137bf25a748b7d3d228cc7b1105872f74b6af529c4667c0e53e3b4698e5": {
     "r": 0,
@@ -30021,7 +30021,7 @@
   },
   "da415d27aa6d8db3394e4ff9425f14c4803bac0666129fb5ade51ae1e5688360": {
     "r": 0,
-    "t": "Moteur 4"
+    "t": "Motor4"
   },
   "da4bf0efb9daa3c53daa31d8c6324c7a12ef0c031d10fee5b2be86d9242780d6": {
     "r": 0,
@@ -32714,7 +32714,7 @@
   },
   "ed0eefb53682ec1431aa6ac3a50cf7325860904f958ae6dc25b61b338d6e83b3": {
     "r": 0,
-    "t": "Moteur27"
+    "t": "Motor27"
   },
   "ed2533e5e396302ef8658842b81e1774e96c3aa93ecc6e938822c27038912fb7": {
     "r": 0,
@@ -33890,7 +33890,7 @@
   },
   "f51b25c566177d7058f2ed2c04b40c3e71fe165839fba9da5daf16b092b11e71": {
     "r": 0,
-    "t": "Moteur 20"
+    "t": "Motor20"
   },
   "f51e55deaa42bc90201aebeb3bd605321d1fb03ac69514d71a5a341de76c0106": {
     "r": 0,
@@ -34154,7 +34154,7 @@
   },
   "f6730e859ace9982920e40cd6f841969879a84268e05ea23b1bd64bf569efc2a": {
     "r": 0,
-    "t": "Moteur23"
+    "t": "Motor23"
   },
   "f6734fdd5975251701a727f84ed4885731c02af1a67d74dbc2fdd40738ddb543": {
     "r": 0,
