@@ -47,7 +47,7 @@
 ## 修复状态
 
 - **已在 data-v2026.11.5 修复**：commit `900d4b7`（"data: apply cross-model review fixes for 2026.11.5"，2026-11-22），含 MotorN/ModeN 全 locale 英文归一化 + 上表 4 medium + 13 low，共改 9 个 TM + manifest（152 行）。
-- **上游文本缺陷（2 条，不归本仓库修）**：BATTB_ESC_MASK desc 悬空 "in"（"selected in will be used"）；FFT_HMNC_PEAK 选项 5 重复选项 4 的 "(peak on roll)"。三语译文均如实传播，语义与源一致，建议反馈 ArduPilot 上游。
+- **上游文本缺陷（2 条，不归本仓库修）**：BATTB_ESC_MASK desc 悬空 "in"（"selected in will be used"）；FFT_HMNC_PEAK 选项 5 重复选项 4 的 "(peak on roll)"。三语译文均如实传播，语义与源一致。已反馈上游：https://github.com/ArduPilot/ardupilot/issues/35332
 
 ## 独立核验
 
