@@ -26,6 +26,7 @@ from .common import (
     file_sha256,
     is_canonical_int,
     load_config,
+    read_json,
     text_hash,
     write_json,
 )
@@ -209,7 +210,11 @@ def main() -> int:
     if ARGS and ARGS.vehicle_params:
         vehicle_params = {line.strip() for line in Path(ARGS.vehicle_params).read_text().splitlines() if line.strip()}
 
-    all_aliases: dict = {}
+    # aliases.json is authored by hand; rebuilding the catalog must not erase it.
+    aliases_path = ROOT / "aliases.json"
+    all_aliases = read_json(aliases_path) if aliases_path.exists() else {}
+    if not isinstance(all_aliases, dict):
+        all_aliases = {}
     for vehicle, vcfg in sorted(cfg["vehicles"].items()):
         series_meta: dict = {}
         for series in vcfg["series"]:
@@ -256,7 +261,7 @@ def main() -> int:
 
         vehicle_alias = derive_aliases(series_meta, alias_report)
         if vehicle_alias:
-            all_aliases[vehicle] = vehicle_alias
+            all_aliases.setdefault(vehicle, {}).update(vehicle_alias)
 
     write_json(ROOT / "source.json", source)
     write_json(ROOT / "aliases.json", all_aliases)
