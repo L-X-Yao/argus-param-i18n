@@ -66,6 +66,8 @@ CI runs both on every push and pull request.
 
 - [2026-11-22 cross-model translation review](docs/TRANSLATION_REVIEW_2026-11-22.md): sampling
   scope, 17 findings, and the fixes shipped in `data-v2026.11.5`.
+- [2026-11-22 alias candidate review](docs/ALIAS_REVIEW_2026-11-22.md): 207 candidates,
+  21 confirmed by two models, 186 rejected instance/sibling matches; `aliases.json` not changed.
 
 ## License
 
