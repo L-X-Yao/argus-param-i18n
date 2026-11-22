@@ -297,7 +297,8 @@ def main() -> int:
     lines.extend(f"  - {v} {k}: {t}" for v, m in all_aliases.items() for k, t in m.items())
     if alias_report:
         lines.append(f"- alias notes: {len(alias_report)}")
-        lines.extend(f"  - {w}" for w in alias_report[:50])
+        # All candidates, grouped by vehicle: the 58 copter candidates are not the whole list.
+    lines.extend(f"  - {w}" for w in alias_report)
     if vehicle_params:
         target = ARGS.vehicle if ARGS else None
         if target and target in cfg["vehicles"]:
