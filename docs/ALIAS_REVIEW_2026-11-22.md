@@ -58,3 +58,14 @@
 3. `SRx→MAV(x+1)`、`CAM→CAM1` 不要用当前候选直接写；先生成确定性映射并加测试。
 
 原始报告：`docs/alias-reviews/2026-11-22-glm.md`、`docs/alias-reviews/2026-11-22-kimi.md`；交叉复核在 `/tmp/argus-aliases-crosscheck-*.md`（未入库）。
+## 已合入
+
+- **data-v2026.11.6**（2026-11-22）写入 `aliases.json`，共 307 条：
+  - 21 条初筛确认（5 high / 16 medium；两路交叉复核 21/21 agree）
+  - 266 条 `SRx_* → MAV(x+1)_*` 家族映射（由确定性规则生成，逐条校验旧名消失/新名存在/目标唯一）
+  - 16 条 `CAM_* → CAM1_*`
+  - 4 条 `SIM_GPS_JAM → SIM_GPS1_JAM`
+- 验证：`tests/test_aliases.py` 5 项；数据 58 tests；`tools.validate --strict` 0 errors/0 warnings。
+- 未采用 186 条指纹候选（SR→MAV9/CAM→CAM2/EK3→EK2/SIM_GPS→GPS4/TRQ sibling）。
+- 随 Argus **v3.16.2** 发布。
+
