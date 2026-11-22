@@ -62,6 +62,11 @@ python -m tools.validate  # schema, hashes, coverage and token checks
 
 CI runs both on every push and pull request.
 
+## Reviews
+
+- [2026-11-22 cross-model translation review](docs/TRANSLATION_REVIEW_2026-11-22.md): sampling
+  scope, 17 findings, and the fixes shipped in `data-v2026.11.5`.
+
 ## License
 
 The repository is GPL-3.0. The English parameter descriptions are derived from ArduPilot, which
