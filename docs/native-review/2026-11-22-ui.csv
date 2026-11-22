@@ -1,0 +1,457 @@
+locale,key,english,current_translation
+ar,fw.apjInfo,"APJ board id {board}, {size} KB",معرّف لوحة APJ {board}، {size} KB
+ar,fw.armed,Disarm the vehicle before flashing.,قم بفك تسليح المركبة قبل البرمجة.
+ar,fw.backendLinked,Connected through the backend.,متصل عبر الخادم.
+ar,fw.backendNotLinked,"The backend serial link is not connected. Pick its port and connect; a controller in its bootloader sends no heartbeat, which is fine.",رابط الخادم التسلسلي غير متصل. اختر منفذه واتصل؛ وحدة التحكم في محمّل الإقلاع لا ترسل نبضة قلب، وهذا طبيعي.
+ar,fw.boardNote,the bootloader decides; it may differ from the running firmware,القرار لمحمّل الإقلاع؛ وقد يختلف عن البرنامج الثابت قيد التشغيل
+ar,fw.connectPort,Connect this port,وصّل هذا المنفذ
+ar,fw.connectSent,Connect request sent,تم إرسال طلب الاتصال
+ar,fw.disconnectUsb,Disconnect the browser USB link,قطع رابط USB في المتصفح
+ar,fw.dropHint,"Drop an .apj here, or",أفلت ملف .apj هنا، أو
+ar,fw.fcBoard,Controller reports board {board},وحدة التحكم تبلغ عن اللوحة {board}
+ar,fw.flash,Flash,برمجة
+ar,fw.flashBusy,A flash is running.,عملية برمجة قيد التنفيذ.
+ar,fw.flashConfirm,Flash this firmware?,هل تريد برمجة هذا البرنامج الثابت؟
+ar,fw.flashDone,Flash complete,اكتملت البرمجة
+ar,fw.flashFailed,Flash failed,فشلت البرمجة
+ar,fw.flashRetry,Flash again,البرمجة مرة أخرى
+ar,fw.flashWarn,The flight controller must be disarmed and connected through the backend serial link. Do not power off or unplug during the write.,يجب فك تسليح وحدة التحكم بالطيران وتوصيلها عبر رابط الخادم التسلسلي. لا تقطع الطاقة ولا تفصل الكابل أثناء الكتابة.
+ar,fw.infoFailed,This .apj cannot be read.,تعذّرت قراءة ملف .apj هذا.
+ar,fw.noBackend,The backend is not connected.,الخادم غير متصل.
+ar,fw.noFileSelected,Choose a firmware file first.,اختر ملف برنامج ثابت أولًا.
+ar,fw.noHeartbeat,"No heartbeat: if the controller is in its bootloader, that is normal and you can flash.",لا توجد نبضة قلب: إذا كانت وحدة التحكم في محمّل الإقلاع فهذا طبيعي ويمكنك البرمجة.
+ar,fw.noLink,"No live vehicle. If the controller is in its bootloader, connect that port first; the flash will find it.",لا توجد مركبة متصلة. إذا كانت وحدة التحكم في محمّل الإقلاع، فوصّل ذلك المنفذ أولًا؛ ستجده عملية البرمجة.
+ar,fw.noPorts,No serial ports found,لم يتم العثور على منافذ تسلسلية
+ar,fw.notBackend,"Flashing needs the backend serial link, not the browser USB link.",تحتاج البرمجة إلى رابط الخادم التسلسلي، لا إلى رابط USB في المتصفح.
+ar,fw.phase.done,Done,تم
+ar,fw.phase.erase,Erasing,جاري المسح
+ar,fw.phase.failed,Failed,فشل
+ar,fw.phase.reboot,Entering the bootloader,الدخول إلى محمّل الإقلاع
+ar,fw.phase.reconnecting,Reconnecting,إعادة الاتصال
+ar,fw.phase.verify,Verifying,جاري التحقق
+ar,fw.phase.waiting,Waiting for the bootloader,في انتظار محمّل الإقلاع
+ar,fw.phase.write,Writing,جاري الكتابة
+ar,fw.pickFile,choose a file,اختر ملفًا
+ar,fw.portLabel,Serial port,المنفذ التسلسلي
+ar,fw.refreshPorts,Refresh ports,تحديث المنافذ
+ar,fw.stepConnect,2. Connect the controller,2. وصّل وحدة التحكم
+ar,fw.stepFile,1. Choose the firmware,1. اختر البرنامج الثابت
+ar,fw.stepFlash,3. Write it,3. ابرمجه
+ar,fw.upgradeTitle,Firmware upgrade,ترقية البرنامج الثابت
+ar,fw.uploading,Uploading...,جاري الرفع...
+ar,log.deleteConfirm,Delete {n} log(s) from this computer? This cannot be undone.,هل تريد حذف {n} من السجلات من هذا الحاسوب؟ لا يمكن التراجع عن ذلك.
+ar,log.deleteFailed,Delete failed,فشل الحذف
+ar,log.deleteRefused,None of the selected logs could be deleted.,تعذّر حذف أي من السجلات المحددة.
+ar,log.deleteSelected,Delete selected,حذف المحدد
+ar,log.deleted,Deleted {n} log(s),تم حذف {n} من السجلات
+ar,log.eraseAll,Erase all onboard logs,مسح كل السجلات المتنية
+ar,log.eraseConfirm,Erase every log on the flight controller? This cannot be undone.,هل تريد مسح كل السجلات على وحدة التحكم بالطيران؟ لا يمكن التراجع عن ذلك.
+ar,log.fcTab,Onboard logs,السجلات المتنية
+ar,log.localEmpty,No logs recorded on this computer,لا توجد سجلات مسجلة على هذا الحاسوب
+ar,log.localLoadFailed,Could not read the local log list.,تعذّرت قراءة قائمة السجلات المحلية.
+ar,log.localNote,The current session and the AI audit log are kept.,يُحتفظ بالجلسة الحالية وسجل تدقيق الذكاء الاصطناعي.
+ar,log.localTab,This computer,هذا الحاسوب
+ar,log.localTitle,Logs recorded by Argus,السجلات التي سجّلها Argus
+ar,log.recording,recording,جاري التسجيل
+ar,log.refresh,Refresh,تحديث
+ar,log.selectAll,Select all,تحديد الكل
+ar,check.saveFailed,Could not save this preflight setting.,تعذّر حفظ إعداد ما قبل الطيران هذا.
+de,fw.apjInfo,"APJ board id {board}, {size} KB","APJ-Board-ID {board}, {size} KB"
+de,fw.armed,Disarm the vehicle before flashing.,Fluggerät vor dem Flashen entschärfen.
+de,fw.backendLinked,Connected through the backend.,Über das Backend verbunden.
+de,fw.backendNotLinked,"The backend serial link is not connected. Pick its port and connect; a controller in its bootloader sends no heartbeat, which is fine.","Die serielle Backend-Verbindung ist nicht verbunden. Wählen Sie den Port und verbinden Sie ihn; eine Steuerung im Bootloader sendet keinen Heartbeat, das ist in Ordnung."
+de,fw.boardNote,the bootloader decides; it may differ from the running firmware,Der Bootloader entscheidet; er kann von der laufenden Firmware abweichen.
+de,fw.connectPort,Connect this port,Diesen Port verbinden
+de,fw.connectSent,Connect request sent,Verbindungsanfrage gesendet
+de,fw.disconnectUsb,Disconnect the browser USB link,Browser-USB-Verbindung trennen
+de,fw.dropHint,"Drop an .apj here, or",APJ hier ablegen oder
+de,fw.fcBoard,Controller reports board {board},Steuerung meldet Board {board}
+de,fw.flash,Flash,Flashen
+de,fw.flashBusy,A flash is running.,Ein Flashvorgang läuft.
+de,fw.flashConfirm,Flash this firmware?,Diese Firmware flashen?
+de,fw.flashDone,Flash complete,Flashen abgeschlossen
+de,fw.flashFailed,Flash failed,Flashen fehlgeschlagen
+de,fw.flashRetry,Flash again,Erneut flashen
+de,fw.flashWarn,The flight controller must be disarmed and connected through the backend serial link. Do not power off or unplug during the write.,Die Flugsteuerung muss entschärft und über die serielle Backend-Verbindung verbunden sein. Schalten Sie während des Schreibens nicht aus und ziehen Sie das Kabel nicht ab.
+de,fw.infoFailed,This .apj cannot be read.,Diese .apj kann nicht gelesen werden.
+de,fw.noBackend,The backend is not connected.,Das Backend ist nicht verbunden.
+de,fw.noFileSelected,Choose a firmware file first.,Wählen Sie zuerst eine Firmware-Datei aus.
+de,fw.noHeartbeat,"No heartbeat: if the controller is in its bootloader, that is normal and you can flash.","Kein Heartbeat: Wenn die Steuerung im Bootloader ist, ist das normal und Sie können flashen."
+de,fw.noLink,"No live vehicle. If the controller is in its bootloader, connect that port first; the flash will find it.","Kein aktives Fluggerät. Wenn die Steuerung im Bootloader ist, verbinden Sie zuerst diesen Port; das Flashen findet sie dann."
+de,fw.noPorts,No serial ports found,Keine seriellen Ports gefunden
+de,fw.notBackend,"Flashing needs the backend serial link, not the browser USB link.","Flashen benötigt die serielle Backend-Verbindung, nicht die USB-Verbindung des Browsers."
+de,fw.phase.done,Done,Fertig
+de,fw.phase.erase,Erasing,Wird gelöscht
+de,fw.phase.failed,Failed,Fehlgeschlagen
+de,fw.phase.reboot,Entering the bootloader,Bootloader wird gestartet
+de,fw.phase.reconnecting,Reconnecting,Erneute Verbindung
+de,fw.phase.verify,Verifying,Wird überprüft
+de,fw.phase.waiting,Waiting for the bootloader,Warten auf den Bootloader
+de,fw.phase.write,Writing,Wird geschrieben
+de,fw.pickFile,choose a file,Datei auswählen
+de,fw.portLabel,Serial port,Serieller Port
+de,fw.refreshPorts,Refresh ports,Ports aktualisieren
+de,fw.stepConnect,2. Connect the controller,2. Steuerung verbinden
+de,fw.stepFile,1. Choose the firmware,1. Firmware auswählen
+de,fw.stepFlash,3. Write it,3. Firmware schreiben
+de,fw.upgradeTitle,Firmware upgrade,Firmware-Upgrade
+de,fw.uploading,Uploading...,Wird hochgeladen...
+de,log.deleteConfirm,Delete {n} log(s) from this computer? This cannot be undone.,{n} Log(s) von diesem Computer löschen? Das kann nicht rückgängig gemacht werden.
+de,log.deleteFailed,Delete failed,Löschen fehlgeschlagen
+de,log.deleteRefused,None of the selected logs could be deleted.,Keines der ausgewählten Logs konnte gelöscht werden.
+de,log.deleteSelected,Delete selected,Ausgewählte löschen
+de,log.deleted,Deleted {n} log(s),{n} Log(s) gelöscht
+de,log.eraseAll,Erase all onboard logs,Alle Bordlogs löschen
+de,log.eraseConfirm,Erase every log on the flight controller? This cannot be undone.,Alle Logs auf der Flugsteuerung löschen? Das kann nicht rückgängig gemacht werden.
+de,log.fcTab,Onboard logs,Bordlogs
+de,log.localEmpty,No logs recorded on this computer,Keine Logs auf diesem Computer
+de,log.localLoadFailed,Could not read the local log list.,Die lokale Logliste konnte nicht gelesen werden.
+de,log.localNote,The current session and the AI audit log are kept.,Die aktuelle Sitzung und das KI-Audit-Log bleiben erhalten.
+de,log.localTab,This computer,Dieser Computer
+de,log.localTitle,Logs recorded by Argus,Von Argus aufgezeichnete Logs
+de,log.recording,recording,Aufzeichnung
+de,log.refresh,Refresh,Aktualisieren
+de,log.selectAll,Select all,Alle auswählen
+de,check.saveFailed,Could not save this preflight setting.,Diese Vorflug-Einstellung konnte nicht gespeichert werden.
+es,fw.apjInfo,"APJ board id {board}, {size} KB","ID de placa APJ {board}, {size} KB"
+es,fw.armed,Disarm the vehicle before flashing.,Desarme el vehículo antes de flashear.
+es,fw.backendLinked,Connected through the backend.,Conectado a través del backend.
+es,fw.backendNotLinked,"The backend serial link is not connected. Pick its port and connect; a controller in its bootloader sends no heartbeat, which is fine.","El enlace serie del backend no está conectado. Elija su puerto y conéctelo; un controlador en bootloader no envía heartbeat, y eso es normal."
+es,fw.boardNote,the bootloader decides; it may differ from the running firmware,decide el bootloader; puede diferir del firmware en ejecución
+es,fw.connectPort,Connect this port,Conectar este puerto
+es,fw.connectSent,Connect request sent,Solicitud de conexión enviada
+es,fw.disconnectUsb,Disconnect the browser USB link,Desconectar el enlace USB del navegador
+es,fw.dropHint,"Drop an .apj here, or","Suelte un .apj aquí, o"
+es,fw.fcBoard,Controller reports board {board},El controlador informa la placa {board}
+es,fw.flash,Flash,Flashear
+es,fw.flashBusy,A flash is running.,Hay un flasheo en curso.
+es,fw.flashConfirm,Flash this firmware?,¿Flashear este firmware?
+es,fw.flashDone,Flash complete,Flasheo completado
+es,fw.flashFailed,Flash failed,Fallo al flashear
+es,fw.flashRetry,Flash again,Volver a flashear
+es,fw.flashWarn,The flight controller must be disarmed and connected through the backend serial link. Do not power off or unplug during the write.,El controlador de vuelo debe estar desarmado y conectado por el enlace serie del backend. No apague ni desconecte durante la escritura.
+es,fw.infoFailed,This .apj cannot be read.,No se puede leer este .apj.
+es,fw.noBackend,The backend is not connected.,El backend no está conectado.
+es,fw.noFileSelected,Choose a firmware file first.,Elija primero un archivo de firmware.
+es,fw.noHeartbeat,"No heartbeat: if the controller is in its bootloader, that is normal and you can flash.","Sin heartbeat: si el controlador está en bootloader, es normal y puede flashear."
+es,fw.noLink,"No live vehicle. If the controller is in its bootloader, connect that port first; the flash will find it.","No hay vehículo en línea. Si el controlador está en bootloader, conecte primero ese puerto; el flasheo lo encontrará."
+es,fw.noPorts,No serial ports found,No se encontraron puertos serie
+es,fw.notBackend,"Flashing needs the backend serial link, not the browser USB link.","El flasheo requiere el enlace serie del backend, no el enlace USB del navegador."
+es,fw.phase.done,Done,Hecho
+es,fw.phase.erase,Erasing,Borrando
+es,fw.phase.failed,Failed,Fallido
+es,fw.phase.reboot,Entering the bootloader,Entrando al bootloader
+es,fw.phase.reconnecting,Reconnecting,Reconectando
+es,fw.phase.verify,Verifying,Verificando
+es,fw.phase.waiting,Waiting for the bootloader,Esperando al bootloader
+es,fw.phase.write,Writing,Escribiendo
+es,fw.pickFile,choose a file,elegir un archivo
+es,fw.portLabel,Serial port,Puerto serie
+es,fw.refreshPorts,Refresh ports,Actualizar puertos
+es,fw.stepConnect,2. Connect the controller,2. Conectar el controlador
+es,fw.stepFile,1. Choose the firmware,1. Elegir el firmware
+es,fw.stepFlash,3. Write it,3. Escribirlo
+es,fw.upgradeTitle,Firmware upgrade,Actualización de firmware
+es,fw.uploading,Uploading...,Subiendo...
+es,log.deleteConfirm,Delete {n} log(s) from this computer? This cannot be undone.,¿Eliminar {n} registro(s) de este equipo? Esto no se puede deshacer.
+es,log.deleteFailed,Delete failed,Error al eliminar
+es,log.deleteRefused,None of the selected logs could be deleted.,No se pudo eliminar ninguno de los registros seleccionados.
+es,log.deleteSelected,Delete selected,Eliminar seleccionados
+es,log.deleted,Deleted {n} log(s),{n} registro(s) eliminado(s)
+es,log.eraseAll,Erase all onboard logs,Borrar todos los registros a bordo
+es,log.eraseConfirm,Erase every log on the flight controller? This cannot be undone.,¿Borrar todos los registros del controlador de vuelo? Esto no se puede deshacer.
+es,log.fcTab,Onboard logs,Registros a bordo
+es,log.localEmpty,No logs recorded on this computer,No hay registros en este equipo
+es,log.localLoadFailed,Could not read the local log list.,No se pudo leer la lista de registros locales.
+es,log.localNote,The current session and the AI audit log are kept.,Se conservan la sesión actual y el registro de auditoría de la IA.
+es,log.localTab,This computer,Este equipo
+es,log.localTitle,Logs recorded by Argus,Registros grabados por Argus
+es,log.recording,recording,grabando
+es,log.refresh,Refresh,Actualizar
+es,log.selectAll,Select all,Seleccionar todo
+es,check.saveFailed,Could not save this preflight setting.,No se pudo guardar este ajuste prevuelo.
+fr,fw.apjInfo,"APJ board id {board}, {size} KB","ID de carte APJ {board}, {size} Ko"
+fr,fw.armed,Disarm the vehicle before flashing.,Désarmez le véhicule avant le flash.
+fr,fw.backendLinked,Connected through the backend.,Connecté via le backend.
+fr,fw.backendNotLinked,"The backend serial link is not connected. Pick its port and connect; a controller in its bootloader sends no heartbeat, which is fine.","La liaison série du backend n’est pas connectée. Choisissez son port et connectez-le ; un contrôleur en bootloader n’envoie pas de heartbeat, c’est normal."
+fr,fw.boardNote,the bootloader decides; it may differ from the running firmware,le bootloader décide ; il peut différer du firmware en cours
+fr,fw.connectPort,Connect this port,Connecter ce port
+fr,fw.connectSent,Connect request sent,Demande de connexion envoyée
+fr,fw.disconnectUsb,Disconnect the browser USB link,Déconnecter la liaison USB du navigateur
+fr,fw.dropHint,"Drop an .apj here, or","Déposez un .apj ici, ou"
+fr,fw.fcBoard,Controller reports board {board},Le contrôleur annonce la carte {board}
+fr,fw.flash,Flash,Flasher
+fr,fw.flashBusy,A flash is running.,Un flash est en cours.
+fr,fw.flashConfirm,Flash this firmware?,Flasher ce firmware ?
+fr,fw.flashDone,Flash complete,Flash terminé
+fr,fw.flashFailed,Flash failed,Échec du flash
+fr,fw.flashRetry,Flash again,Flasher à nouveau
+fr,fw.flashWarn,The flight controller must be disarmed and connected through the backend serial link. Do not power off or unplug during the write.,Le contrôleur de vol doit être désarmé et connecté par la liaison série du backend. Ne pas couper l’alimentation ni débrancher pendant l’écriture.
+fr,fw.infoFailed,This .apj cannot be read.,Ce fichier .apj est illisible.
+fr,fw.noBackend,The backend is not connected.,Le backend n’est pas connecté.
+fr,fw.noFileSelected,Choose a firmware file first.,Choisissez d’abord un fichier firmware.
+fr,fw.noHeartbeat,"No heartbeat: if the controller is in its bootloader, that is normal and you can flash.","Pas de heartbeat : si le contrôleur est en bootloader, c’est normal et vous pouvez flasher."
+fr,fw.noLink,"No live vehicle. If the controller is in its bootloader, connect that port first; the flash will find it.","Aucun véhicule en ligne. Si le contrôleur est en bootloader, connectez d’abord ce port ; le flash le trouvera."
+fr,fw.noPorts,No serial ports found,Aucun port série trouvé
+fr,fw.notBackend,"Flashing needs the backend serial link, not the browser USB link.","Le flash nécessite la liaison série du backend, pas la liaison USB du navigateur."
+fr,fw.phase.done,Done,Terminé
+fr,fw.phase.erase,Erasing,Effacement
+fr,fw.phase.failed,Failed,Échec
+fr,fw.phase.reboot,Entering the bootloader,Entrée dans le bootloader
+fr,fw.phase.reconnecting,Reconnecting,Reconnexion
+fr,fw.phase.verify,Verifying,Vérification
+fr,fw.phase.waiting,Waiting for the bootloader,En attente du bootloader
+fr,fw.phase.write,Writing,Écriture
+fr,fw.pickFile,choose a file,choisir un fichier
+fr,fw.portLabel,Serial port,Port série
+fr,fw.refreshPorts,Refresh ports,Actualiser les ports
+fr,fw.stepConnect,2. Connect the controller,2. Connecter le contrôleur
+fr,fw.stepFile,1. Choose the firmware,1. Choisir le firmware
+fr,fw.stepFlash,3. Write it,3. L’écrire
+fr,fw.upgradeTitle,Firmware upgrade,Mise à niveau du micrologiciel
+fr,fw.uploading,Uploading...,Envoi...
+fr,log.deleteConfirm,Delete {n} log(s) from this computer? This cannot be undone.,Supprimer {n} log(s) de cet ordinateur ? Cette action est irréversible.
+fr,log.deleteFailed,Delete failed,Échec de la suppression
+fr,log.deleteRefused,None of the selected logs could be deleted.,Aucun des logs sélectionnés n’a pu être supprimé.
+fr,log.deleteSelected,Delete selected,Supprimer la sélection
+fr,log.deleted,Deleted {n} log(s),{n} log(s) supprimé(s)
+fr,log.eraseAll,Erase all onboard logs,Effacer tous les logs embarqués
+fr,log.eraseConfirm,Erase every log on the flight controller? This cannot be undone.,Effacer tous les logs du contrôleur de vol ? Cette action est irréversible.
+fr,log.fcTab,Onboard logs,Logs embarqués
+fr,log.localEmpty,No logs recorded on this computer,Aucun log enregistré sur cet ordinateur
+fr,log.localLoadFailed,Could not read the local log list.,Impossible de lire la liste des logs locaux.
+fr,log.localNote,The current session and the AI audit log are kept.,La session en cours et le journal d’audit de l’IA sont conservés.
+fr,log.localTab,This computer,Cet ordinateur
+fr,log.localTitle,Logs recorded by Argus,Logs enregistrés par Argus
+fr,log.recording,recording,enregistrement
+fr,log.refresh,Refresh,Actualiser
+fr,log.selectAll,Select all,Tout sélectionner
+fr,check.saveFailed,Could not save this preflight setting.,Impossible d’enregistrer ce réglage prévol.
+ja,fw.apjInfo,"APJ board id {board}, {size} KB",APJボードID {board}、{size} KB
+ja,fw.armed,Disarm the vehicle before flashing.,書き込みの前に機体をディスアームしてください。
+ja,fw.backendLinked,Connected through the backend.,バックエンド経由で接続済み。
+ja,fw.backendNotLinked,"The backend serial link is not connected. Pick its port and connect; a controller in its bootloader sends no heartbeat, which is fine.",バックエンドのシリアル接続が未接続です。ポートを選んで接続してください。ブートローダー中のコントローラーはハートビートを送りませんが、問題ありません。
+ja,fw.boardNote,the bootloader decides; it may differ from the running firmware,ブートローダーの報告が優先されます。実行中のファームウェアと異なる場合があります
+ja,fw.connectPort,Connect this port,このポートに接続
+ja,fw.connectSent,Connect request sent,接続要求を送信しました
+ja,fw.disconnectUsb,Disconnect the browser USB link,ブラウザーのUSB接続を切断
+ja,fw.dropHint,"Drop an .apj here, or",ここに .apj をドロップ、または
+ja,fw.fcBoard,Controller reports board {board},コントローラーのボード報告: {board}
+ja,fw.flash,Flash,書き込む
+ja,fw.flashBusy,A flash is running.,書き込み中です。
+ja,fw.flashConfirm,Flash this firmware?,このファームウェアを書き込みますか？
+ja,fw.flashDone,Flash complete,書き込み完了
+ja,fw.flashFailed,Flash failed,書き込み失敗
+ja,fw.flashRetry,Flash again,もう一度書き込む
+ja,fw.flashWarn,The flight controller must be disarmed and connected through the backend serial link. Do not power off or unplug during the write.,フライトコントローラーをディスアームし、バックエンドのシリアル接続で接続してください。書き込み中は電源を切ったりケーブルを抜いたりしないでください。
+ja,fw.infoFailed,This .apj cannot be read.,この .apj は読み取れません。
+ja,fw.noBackend,The backend is not connected.,バックエンドが接続されていません。
+ja,fw.noFileSelected,Choose a firmware file first.,先にファームウェアファイルを選択してください。
+ja,fw.noHeartbeat,"No heartbeat: if the controller is in its bootloader, that is normal and you can flash.",ハートビートなし: コントローラーがブートローダー中なら正常で、そのまま書き込めます。
+ja,fw.noLink,"No live vehicle. If the controller is in its bootloader, connect that port first; the flash will find it.",オンラインの機体がありません。コントローラーがブートローダー中なら、先にそのポートへ接続してください。書き込み時に自動で認識します。
+ja,fw.noPorts,No serial ports found,シリアルポートが見つかりません
+ja,fw.notBackend,"Flashing needs the backend serial link, not the browser USB link.",書き込みにはバックエンドのシリアル接続が必要です。ブラウザーのUSB接続ではできません。
+ja,fw.phase.done,Done,完了
+ja,fw.phase.erase,Erasing,消去中
+ja,fw.phase.failed,Failed,失敗
+ja,fw.phase.reboot,Entering the bootloader,ブートローダーへ移行中
+ja,fw.phase.reconnecting,Reconnecting,再接続中
+ja,fw.phase.verify,Verifying,検証中
+ja,fw.phase.waiting,Waiting for the bootloader,ブートローダーを待機中
+ja,fw.phase.write,Writing,書き込み中
+ja,fw.pickFile,choose a file,ファイルを選択
+ja,fw.portLabel,Serial port,シリアルポート
+ja,fw.refreshPorts,Refresh ports,ポートを更新
+ja,fw.stepConnect,2. Connect the controller,2. コントローラーを接続
+ja,fw.stepFile,1. Choose the firmware,1. ファームウェアを選択
+ja,fw.stepFlash,3. Write it,3. 書き込む
+ja,fw.upgradeTitle,Firmware upgrade,ファームウェア更新
+ja,fw.uploading,Uploading...,アップロード中...
+ja,log.deleteConfirm,Delete {n} log(s) from this computer? This cannot be undone.,このコンピューターから {n} 件のログを削除しますか？この操作は元に戻せません。
+ja,log.deleteFailed,Delete failed,削除失敗
+ja,log.deleteRefused,None of the selected logs could be deleted.,選択したログはどれも削除できませんでした。
+ja,log.deleteSelected,Delete selected,選択項目を削除
+ja,log.deleted,Deleted {n} log(s),{n} 件のログを削除しました
+ja,log.eraseAll,Erase all onboard logs,オンボードログをすべて消去
+ja,log.eraseConfirm,Erase every log on the flight controller? This cannot be undone.,フライトコントローラーのすべてのログを消去しますか？この操作は元に戻せません。
+ja,log.fcTab,Onboard logs,オンボードログ
+ja,log.localEmpty,No logs recorded on this computer,このコンピューターに記録されたログはありません
+ja,log.localLoadFailed,Could not read the local log list.,ローカルログ一覧を読み取れませんでした。
+ja,log.localNote,The current session and the AI audit log are kept.,現在のセッションとAI監査ログは保持されます。
+ja,log.localTab,This computer,このコンピューター
+ja,log.localTitle,Logs recorded by Argus,Argus が記録したログ
+ja,log.recording,recording,記録中
+ja,log.refresh,Refresh,更新
+ja,log.selectAll,Select all,すべて選択
+ja,check.saveFailed,Could not save this preflight setting.,この飛行前設定を保存できませんでした。
+ko,fw.apjInfo,"APJ board id {board}, {size} KB","APJ 보드 ID {board}, {size} KB"
+ko,fw.armed,Disarm the vehicle before flashing.,플래시하기 전에 기체를 디스암하십시오.
+ko,fw.backendLinked,Connected through the backend.,백엔드를 통해 연결됨.
+ko,fw.backendNotLinked,"The backend serial link is not connected. Pick its port and connect; a controller in its bootloader sends no heartbeat, which is fine.",백엔드 시리얼 연결이 끊겨 있습니다. 포트를 선택해 연결하십시오. 부트로더 상태의 컨트롤러는 하트비트를 보내지 않으며 이는 정상입니다.
+ko,fw.boardNote,the bootloader decides; it may differ from the running firmware,부트로더 보고가 우선이며 실행 중인 펌웨어와 다를 수 있습니다
+ko,fw.connectPort,Connect this port,이 포트 연결
+ko,fw.connectSent,Connect request sent,연결 요청을 보냈습니다
+ko,fw.disconnectUsb,Disconnect the browser USB link,브라우저 USB 연결 해제
+ko,fw.dropHint,"Drop an .apj here, or",여기에 .apj를 놓거나
+ko,fw.fcBoard,Controller reports board {board},컨트롤러가 보고한 보드: {board}
+ko,fw.flash,Flash,플래시
+ko,fw.flashBusy,A flash is running.,플래시가 진행 중입니다.
+ko,fw.flashConfirm,Flash this firmware?,이 펌웨어를 플래시할까요?
+ko,fw.flashDone,Flash complete,플래시 완료
+ko,fw.flashFailed,Flash failed,플래시 실패
+ko,fw.flashRetry,Flash again,다시 플래시
+ko,fw.flashWarn,The flight controller must be disarmed and connected through the backend serial link. Do not power off or unplug during the write.,플라이 컨트롤러를 디스암하고 백엔드 시리얼 연결로 연결해야 합니다. 쓰는 동안 전원을 끄거나 케이블을 분리하지 마십시오.
+ko,fw.infoFailed,This .apj cannot be read.,이 .apj 파일을 읽을 수 없습니다.
+ko,fw.noBackend,The backend is not connected.,백엔드가 연결되지 않았습니다.
+ko,fw.noFileSelected,Choose a firmware file first.,먼저 펌웨어 파일을 선택하십시오.
+ko,fw.noHeartbeat,"No heartbeat: if the controller is in its bootloader, that is normal and you can flash.",하트비트 없음: 컨트롤러가 부트로더 상태라면 정상이며 바로 플래시할 수 있습니다.
+ko,fw.noLink,"No live vehicle. If the controller is in its bootloader, connect that port first; the flash will find it.",온라인 기체가 없습니다. 컨트롤러가 부트로더 상태라면 먼저 해당 포트에 연결하십시오. 플래시가 자동으로 찾습니다.
+ko,fw.noPorts,No serial ports found,시리얼 포트를 찾을 수 없습니다
+ko,fw.notBackend,"Flashing needs the backend serial link, not the browser USB link.",플래시에는 백엔드 시리얼 연결이 필요하며 브라우저 USB 연결로는 할 수 없습니다.
+ko,fw.phase.done,Done,완료
+ko,fw.phase.erase,Erasing,지우는 중
+ko,fw.phase.failed,Failed,실패
+ko,fw.phase.reboot,Entering the bootloader,부트로더로 전환 중
+ko,fw.phase.reconnecting,Reconnecting,다시 연결 중
+ko,fw.phase.verify,Verifying,검증 중
+ko,fw.phase.waiting,Waiting for the bootloader,부트로더 대기 중
+ko,fw.phase.write,Writing,기록 중
+ko,fw.pickFile,choose a file,파일 선택
+ko,fw.portLabel,Serial port,시리얼 포트
+ko,fw.refreshPorts,Refresh ports,포트 새로고침
+ko,fw.stepConnect,2. Connect the controller,2. 컨트롤러 연결
+ko,fw.stepFile,1. Choose the firmware,1. 펌웨어 선택
+ko,fw.stepFlash,3. Write it,3. 기록하기
+ko,fw.upgradeTitle,Firmware upgrade,펌웨어 업그레이드
+ko,fw.uploading,Uploading...,업로드 중...
+ko,log.deleteConfirm,Delete {n} log(s) from this computer? This cannot be undone.,이 컴퓨터에서 로그 {n}개를 삭제할까요? 이 작업은 되돌릴 수 없습니다.
+ko,log.deleteFailed,Delete failed,삭제 실패
+ko,log.deleteRefused,None of the selected logs could be deleted.,선택한 로그를 하나도 삭제할 수 없었습니다.
+ko,log.deleteSelected,Delete selected,선택 항목 삭제
+ko,log.deleted,Deleted {n} log(s),로그 {n}개를 삭제했습니다
+ko,log.eraseAll,Erase all onboard logs,온보드 로그 모두 지우기
+ko,log.eraseConfirm,Erase every log on the flight controller? This cannot be undone.,플라이 컨트롤러의 모든 로그를 지울까요? 이 작업은 되돌릴 수 없습니다.
+ko,log.fcTab,Onboard logs,온보드 로그
+ko,log.localEmpty,No logs recorded on this computer,이 컴퓨터에 기록된 로그가 없습니다
+ko,log.localLoadFailed,Could not read the local log list.,로컬 로그 목록을 읽을 수 없었습니다.
+ko,log.localNote,The current session and the AI audit log are kept.,현재 세션과 AI 감사 로그는 유지됩니다.
+ko,log.localTab,This computer,이 컴퓨터
+ko,log.localTitle,Logs recorded by Argus,Argus가 기록한 로그
+ko,log.recording,recording,기록 중
+ko,log.refresh,Refresh,새로고침
+ko,log.selectAll,Select all,모두 선택
+ko,check.saveFailed,Could not save this preflight setting.,이 비행 전 설정을 저장할 수 없었습니다.
+pt,fw.apjInfo,"APJ board id {board}, {size} KB","ID da placa APJ {board}, {size} KB"
+pt,fw.armed,Disarm the vehicle before flashing.,Desarme o veículo antes de gravar.
+pt,fw.backendLinked,Connected through the backend.,Conectado pelo backend.
+pt,fw.backendNotLinked,"The backend serial link is not connected. Pick its port and connect; a controller in its bootloader sends no heartbeat, which is fine.","O link serial do backend não está conectado. Escolha a porta e conecte; um controlador no bootloader não envia heartbeat, o que é normal."
+pt,fw.boardNote,the bootloader decides; it may differ from the running firmware,o bootloader decide; pode diferir do firmware em execução
+pt,fw.connectPort,Connect this port,Conectar esta porta
+pt,fw.connectSent,Connect request sent,Pedido de conexão enviado
+pt,fw.disconnectUsb,Disconnect the browser USB link,Desconectar o link USB do navegador
+pt,fw.dropHint,"Drop an .apj here, or","Solte um .apj aqui, ou"
+pt,fw.fcBoard,Controller reports board {board},O controlador informa a placa {board}
+pt,fw.flash,Flash,Gravar
+pt,fw.flashBusy,A flash is running.,Uma gravação está em andamento.
+pt,fw.flashConfirm,Flash this firmware?,Gravar este firmware?
+pt,fw.flashDone,Flash complete,Gravação concluída
+pt,fw.flashFailed,Flash failed,Falha na gravação
+pt,fw.flashRetry,Flash again,Gravar novamente
+pt,fw.flashWarn,The flight controller must be disarmed and connected through the backend serial link. Do not power off or unplug during the write.,O controlador de voo deve estar desarmado e conectado pelo link serial do backend. Não desligue nem desconecte durante a gravação.
+pt,fw.infoFailed,This .apj cannot be read.,Não é possível ler este .apj.
+pt,fw.noBackend,The backend is not connected.,O backend não está conectado.
+pt,fw.noFileSelected,Choose a firmware file first.,Escolha primeiro um arquivo de firmware.
+pt,fw.noHeartbeat,"No heartbeat: if the controller is in its bootloader, that is normal and you can flash.","Sem heartbeat: se o controlador estiver no bootloader, isso é normal e você pode gravar."
+pt,fw.noLink,"No live vehicle. If the controller is in its bootloader, connect that port first; the flash will find it.","Nenhum veículo online. Se o controlador estiver no bootloader, conecte primeiro essa porta; a gravação o encontrará."
+pt,fw.noPorts,No serial ports found,Nenhuma porta serial encontrada
+pt,fw.notBackend,"Flashing needs the backend serial link, not the browser USB link.","A gravação exige o link serial do backend, não o link USB do navegador."
+pt,fw.phase.done,Done,Concluído
+pt,fw.phase.erase,Erasing,Apagando
+pt,fw.phase.failed,Failed,Falhou
+pt,fw.phase.reboot,Entering the bootloader,Entrando no bootloader
+pt,fw.phase.reconnecting,Reconnecting,Reconectando
+pt,fw.phase.verify,Verifying,Verificando
+pt,fw.phase.waiting,Waiting for the bootloader,Aguardando o bootloader
+pt,fw.phase.write,Writing,Gravando
+pt,fw.pickFile,choose a file,escolher um arquivo
+pt,fw.portLabel,Serial port,Porta serial
+pt,fw.refreshPorts,Refresh ports,Atualizar portas
+pt,fw.stepConnect,2. Connect the controller,2. Conectar o controlador
+pt,fw.stepFile,1. Choose the firmware,1. Escolher o firmware
+pt,fw.stepFlash,3. Write it,3. Gravá-lo
+pt,fw.upgradeTitle,Firmware upgrade,Atualização de firmware
+pt,fw.uploading,Uploading...,Enviando...
+pt,log.deleteConfirm,Delete {n} log(s) from this computer? This cannot be undone.,Excluir {n} registro(s) deste computador? Isto não pode ser desfeito.
+pt,log.deleteFailed,Delete failed,Falha ao excluir
+pt,log.deleteRefused,None of the selected logs could be deleted.,Nenhum dos registros selecionados pôde ser excluído.
+pt,log.deleteSelected,Delete selected,Excluir selecionados
+pt,log.deleted,Deleted {n} log(s),{n} registro(s) excluído(s)
+pt,log.eraseAll,Erase all onboard logs,Apagar todos os registros de bordo
+pt,log.eraseConfirm,Erase every log on the flight controller? This cannot be undone.,Apagar todos os registros do controlador de voo? Isto não pode ser desfeito.
+pt,log.fcTab,Onboard logs,Registros de bordo
+pt,log.localEmpty,No logs recorded on this computer,Nenhum registro neste computador
+pt,log.localLoadFailed,Could not read the local log list.,Não foi possível ler a lista de registros locais.
+pt,log.localNote,The current session and the AI audit log are kept.,A sessão atual e o log de auditoria da IA são mantidos.
+pt,log.localTab,This computer,Este computador
+pt,log.localTitle,Logs recorded by Argus,Registros gravados pelo Argus
+pt,log.recording,recording,gravando
+pt,log.refresh,Refresh,Atualizar
+pt,log.selectAll,Select all,Selecionar tudo
+pt,check.saveFailed,Could not save this preflight setting.,Não foi possível salvar esta configuração de pré-voo.
+ru,fw.apjInfo,"APJ board id {board}, {size} KB","ID платы APJ {board}, {size} КБ"
+ru,fw.armed,Disarm the vehicle before flashing.,Обезоружьте аппарат перед прошивкой.
+ru,fw.backendLinked,Connected through the backend.,Подключено через бэкенд.
+ru,fw.backendNotLinked,"The backend serial link is not connected. Pick its port and connect; a controller in its bootloader sends no heartbeat, which is fine.","Последовательное соединение с бэкендом не подключено. Выберите порт и подключитесь; контроллер в загрузчике не отправляет heartbeat, это нормально."
+ru,fw.boardNote,the bootloader decides; it may differ from the running firmware,решает загрузчик; он может отличаться от работающей прошивки
+ru,fw.connectPort,Connect this port,Подключить этот порт
+ru,fw.connectSent,Connect request sent,Запрос на подключение отправлен
+ru,fw.disconnectUsb,Disconnect the browser USB link,Отключить USB-соединение браузера
+ru,fw.dropHint,"Drop an .apj here, or",Перетащите .apj сюда или
+ru,fw.fcBoard,Controller reports board {board},Контроллер сообщает плату {board}
+ru,fw.flash,Flash,Прошить
+ru,fw.flashBusy,A flash is running.,Идёт прошивка.
+ru,fw.flashConfirm,Flash this firmware?,Прошить эту прошивку?
+ru,fw.flashDone,Flash complete,Прошивка завершена
+ru,fw.flashFailed,Flash failed,Ошибка прошивки
+ru,fw.flashRetry,Flash again,Прошить снова
+ru,fw.flashWarn,The flight controller must be disarmed and connected through the backend serial link. Do not power off or unplug during the write.,Полётный контроллер должен быть обезоружен и подключён через последовательное соединение бэкенда. Не отключайте питание и не отсоединяйте кабель во время записи.
+ru,fw.infoFailed,This .apj cannot be read.,Не удаётся прочитать этот .apj.
+ru,fw.noBackend,The backend is not connected.,Бэкенд не подключён.
+ru,fw.noFileSelected,Choose a firmware file first.,Сначала выберите файл прошивки.
+ru,fw.noHeartbeat,"No heartbeat: if the controller is in its bootloader, that is normal and you can flash.","Нет heartbeat: если контроллер в загрузчике, это нормально и можно прошивать."
+ru,fw.noLink,"No live vehicle. If the controller is in its bootloader, connect that port first; the flash will find it.","Нет аппарата на связи. Если контроллер в загрузчике, сначала подключите этот порт; прошивка его найдёт."
+ru,fw.noPorts,No serial ports found,Последовательные порты не найдены
+ru,fw.notBackend,"Flashing needs the backend serial link, not the browser USB link.","Для прошивки нужно последовательное соединение бэкенда, а не USB-соединение браузера."
+ru,fw.phase.done,Done,Готово
+ru,fw.phase.erase,Erasing,Стирание
+ru,fw.phase.failed,Failed,Ошибка
+ru,fw.phase.reboot,Entering the bootloader,Вход в загрузчик
+ru,fw.phase.reconnecting,Reconnecting,Переподключение
+ru,fw.phase.verify,Verifying,Проверка
+ru,fw.phase.waiting,Waiting for the bootloader,Ожидание загрузчика
+ru,fw.phase.write,Writing,Запись
+ru,fw.pickFile,choose a file,выберите файл
+ru,fw.portLabel,Serial port,Последовательный порт
+ru,fw.refreshPorts,Refresh ports,Обновить порты
+ru,fw.stepConnect,2. Connect the controller,2. Подключите контроллер
+ru,fw.stepFile,1. Choose the firmware,1. Выберите прошивку
+ru,fw.stepFlash,3. Write it,3. Прошейте
+ru,fw.upgradeTitle,Firmware upgrade,Обновление прошивки
+ru,fw.uploading,Uploading...,Загрузка...
+ru,log.deleteConfirm,Delete {n} log(s) from this computer? This cannot be undone.,Удалить {n} лог(ов) с этого компьютера? Это нельзя отменить.
+ru,log.deleteFailed,Delete failed,Ошибка удаления
+ru,log.deleteRefused,None of the selected logs could be deleted.,Не удалось удалить ни одного из выбранных логов.
+ru,log.deleteSelected,Delete selected,Удалить выбранные
+ru,log.deleted,Deleted {n} log(s),Удалено логов: {n}
+ru,log.eraseAll,Erase all onboard logs,Стереть все бортовые логи
+ru,log.eraseConfirm,Erase every log on the flight controller? This cannot be undone.,Стереть все логи на полётном контроллере? Это нельзя отменить.
+ru,log.fcTab,Onboard logs,Бортовые логи
+ru,log.localEmpty,No logs recorded on this computer,На этом компьютере нет логов
+ru,log.localLoadFailed,Could not read the local log list.,Не удалось прочитать список локальных логов.
+ru,log.localNote,The current session and the AI audit log are kept.,Текущая сессия и журнал аудита ИИ сохраняются.
+ru,log.localTab,This computer,Этот компьютер
+ru,log.localTitle,Logs recorded by Argus,"Логи, записанные Argus"
+ru,log.recording,recording,запись
+ru,log.refresh,Refresh,Обновить
+ru,log.selectAll,Select all,Выбрать все
+ru,check.saveFailed,Could not save this preflight setting.,Не удалось сохранить эту предполётную настройку.
