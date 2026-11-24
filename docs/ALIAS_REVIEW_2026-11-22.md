@@ -3,7 +3,7 @@
 - 基线：data-v2026.11.5 / 数据 main `f5eef27`；候选来自 `meta/<vehicle>/<series>.json` 的连续系列指纹匹配。
 - 候选总数 207：copter 58、plane 75、rover 58、sub 16。
 - 初筛：argus-glm 负责 ids 1–104，argus-kimi 负责 105–207；两路交叉复核 21/21 agree。
-- **本文件不修改 `aliases.json`**；21 条需人工确认后才进入数据版本。
+- 本文件为初筛归档；下表 21 条已按两路一致结论合入 `aliases.json`（data-v2026.11.6，见文末“已合入”），186 条不采用。
 
 ## 计数
 
@@ -51,11 +51,13 @@
 | `SIM_GPS_JAM → SIM_GPS4_JAM` | 4 | GPS1–4 共享指纹；主实例应为 `SIM_GPS1_JAM` |
 | `TRQ*` 等 sibling | 7 | 同族共享文案，目标不唯一 |
 
-## 合入前动作
+## 合入动作（已完成）
 
-1. 人工确认上表 21 条；PSC 分组（ACCZ→D、JERK_XY→NE、JERK_Z→D）建议对 ArduPilot 4.7 的 AP_Param 改名转换表做一次上游确认。
-2. 确认后写 `aliases.json`，发 `data-v2026.11.6`，再更新 Argus lock/版本。
-3. `SRx→MAV(x+1)`、`CAM→CAM1` 不要用当前候选直接写；先生成确定性映射并加测试。
+以下为当时的计划，均已在 data-v2026.11.6 执行：
+
+1. 上表 21 条按两路一致结论合入。PSC 分组（ACCZ→D、JERK_XY→NE、JERK_Z→D）对 ArduPilot 4.7 `AP_Param` 改名转换表的上游确认仍是遗留项，不阻塞已发布数据。
+2. 写入 `aliases.json`，发 `data-v2026.11.6`，更新 Argus lock/版本。
+3. `SRx→MAV(x+1)`、`CAM→CAM1` 由确定性映射生成并加测试，未直接采用指纹候选。
 
 原始报告：`docs/alias-reviews/2026-11-22-glm.md`、`docs/alias-reviews/2026-11-22-kimi.md`；交叉复核在 `/tmp/argus-aliases-crosscheck-*.md`（未入库）。
 ## 已合入
