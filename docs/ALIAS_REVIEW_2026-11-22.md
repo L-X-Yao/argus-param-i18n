@@ -13,7 +13,7 @@
 | reject | 186 | 全部 high；主要是实例/sibling 错配 |
 | unsure | 0 | — |
 
-## 待人工确认的 21 条
+## 人工确认的 21 条（2026-11-25 追认）
 
 | id | vehicle | old → new | 初筛置信度 | 复核 |
 |---:|---|---|---|---|
@@ -70,4 +70,5 @@
 - 验证：`tests/test_aliases.py` 5 项；数据 58 tests；`tools.validate --strict` 0 errors/0 warnings。
 - 未采用 186 条指纹候选（SR→MAV9/CAM→CAM2/EK3→EK2/SIM_GPS→GPS4/TRQ sibling）。
 - 随 Argus **v3.16.2** 发布。
+- 2026-11-25：用户追认上表 21 条；数据不变（已随 data-v2026.11.6 发布）。
 
